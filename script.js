@@ -64,10 +64,18 @@ const translations = {
     landscapingFeature3Title: "Outdoor Finishing",
     landscapingFeature3Text:
       "Lighting, accents, and final details for a polished result.",
-    processTitle: "Simple, Clear Process",
-    process1: "Discovery call and on-site consultation",
-    process2: "Design, planning, and detailed quote",
-    process3: "Build, install, and final walkthrough",
+    processTitle: "How It Works",
+    processLead:
+      "From your first call to your first swim — three clear steps, one dedicated team.",
+    process1Title: "Consult",
+    process1Text:
+      "Share your vision. We visit your property, review the layout, and answer your questions.",
+    process2Title: "Plan",
+    process2Text:
+      "Pool model, timeline, and a detailed quote — so you know exactly what to expect.",
+    process3Title: "Build",
+    process3Text:
+      "Excavation, installation, landscaping, and a final walkthrough before you dive in.",
     reviewsBadge: "5.0 Average Client Rating",
     reviewsTitle: "What Clients Say",
     review1Text:
@@ -383,10 +391,18 @@ const translations = {
     landscapingFeature3Title: "Finition extérieure",
     landscapingFeature3Text:
       "Éclairage, accents et détails finaux pour un rendu soigné.",
-    processTitle: "Un processus simple et clair",
-    process1: "Appel de découverte et visite sur place",
-    process2: "Conception, planification et soumission détaillée",
-    process3: "Construction, installation et inspection finale",
+    processTitle: "Comment ça fonctionne",
+    processLead:
+      "Du premier appel à votre première baignade — trois étapes claires, une seule équipe dédiée.",
+    process1Title: "Consultation",
+    process1Text:
+      "Partagez votre vision. Nous visitons votre terrain, examinons l’aménagement et répondons à vos questions.",
+    process2Title: "Planification",
+    process2Text:
+      "Modèle de piscine, échéancier et soumission détaillée — pour que vous sachiez exactement à quoi vous attendre.",
+    process3Title: "Réalisation",
+    process3Text:
+      "Excavation, installation, aménagement paysager et inspection finale avant votre première baignade.",
     reviewsBadge: "Note moyenne des clients : 5.0",
     reviewsTitle: "Ce que disent nos clients",
     review1Text:
