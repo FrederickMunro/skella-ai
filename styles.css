@@ -1283,7 +1283,7 @@ h1 {
   
   body.menu-open .hamburger {
     position: fixed;
-    right: 1.7rem;
+    right: 1rem;
     z-index: 30;
   }
 
