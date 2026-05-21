@@ -888,7 +888,7 @@ h1 {
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
   margin-bottom: 0.5rem;
-  cursor: zoom-in;
+  cursor: pointer;
   transition: opacity 160ms ease;
 }
 
@@ -897,7 +897,7 @@ h1 {
 }
 
 .pool-card h3 {
-  margin: 0rem 1rem 0.3rem;
+  margin: 0.5rem 1rem 0.5rem;
 }
 
 .pool-card p {
@@ -922,7 +922,7 @@ h1 {
   width: auto;
 
   z-index: 10;
-  cursor: zoom-in;
+  cursor: pointer;
   transition: transform 160ms ease, opacity 160ms ease;
 }
 
@@ -1231,7 +1231,7 @@ h1 {
 }
 
 .lightbox-trigger:hover {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .project-img {
@@ -1312,7 +1312,7 @@ h1 {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 
   .nav {
     overflow-y: auto;
