@@ -870,9 +870,15 @@ h1 {
 
 .pool-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   overflow: hidden;
-  padding-bottom: .5rem;
+}
+
+.pool-card:not(:has(.pool-card-actions)) {
+  padding-bottom: 0.5rem;
 }
 
 .pool-image {
@@ -947,6 +953,41 @@ h1 {
 .pool-specs strong {
   color: var(--primary);
   font-weight: 700;
+}
+
+.pool-card-actions {
+  margin-top: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.55rem;
+}
+
+.btn-pool-pdf {
+  width: 100%;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-pool-pdf:hover {
+  border-color: rgba(94, 196, 255, 0.45);
+  background: rgba(94, 196, 255, 0.12);
+  color: var(--primary);
+}
+
+.btn-pool-pdf .btn-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* CONTACT PAGE */
