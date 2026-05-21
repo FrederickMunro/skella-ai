@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="pageTitleGallery">Skella | Projects Gallery</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+
+<body>
+  <div class="bg-gradient"></div>
+  <header class="site-header container">
+    <a class="brand" href="./index.html" aria-label="Skella home">
+      <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
+    </a>
+  
+    <div class="nav-wrapper">
+      <!-- HAMBURGER -->
+      <button class="hamburger" id="hamburger" aria-label="Menu" data-i18n-aria="menuAria">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+      <!-- NAV -->
+      <nav class="nav" id="mobile-nav">
+        <ul class="nav-list">
+          <li class="dropdown">
+            <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="./pools.html" data-i18n="navColors">Colors</a></li>
+              <li><a href="./aquarino.html" data-i18n="navAquarino">Aquarino Collection</a></li>
+              <li><a href="./dolphin.html" data-i18n="navDolphin">Dolphin Collection</a></li>
+              <li><a href="./mova.html" data-i18n="navMova">Mova Collection</a></li>
+            </ul>
+          </li>
+          <li><a href="./landscaping.html" data-i18n="navLandscaping">Landscaping</a></li>
+          <li><a href="./excavation.html" data-i18n="navExcavation">Excavation</a></li>
+          <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
+          <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
+          <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
+  
+          <li class="mobile-lang">
+            <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="sub-hero landscaping">
+      <p class="eyebrow" data-i18n="galleryEyebrow">Our Work</p>
+      <h1 data-i18n="galleryTitle">Project Gallery</h1>
+      <p data-i18n="galleryText">
+        Real transformations. From raw backyards to fully finished outdoor living spaces.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="./quote.html" data-i18n="collectionCta">
+          Request a Quote
+        </a>
+        <a class="btn btn-secondary" href="./index.html" data-i18n="backHome">Back to Home</a>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="compare-group">
+      <h2 data-i18n="galleryBeforeAfter">Before & After Transformations</h2>
+
+      <div class="compare-grid">
+
+        <div class="compare-vertical">
+          <img src="./assets/images/gallery/before-1.avif">
+          <img class="img-top" src="./assets/images/gallery/after-1.avif">
+
+          <div class="slider-handle"></div>
+
+          <div class="img-label top-label" data-i18n="galleryBefore">Before</div>
+          <div class="img-label bottom-label" data-i18n="galleryAfter">After</div>
+        </div>
+
+        <div class="compare-vertical">
+          <img src="./assets/images/gallery/before-2.avif">
+          <img class="img-top" src="./assets/images/gallery/after-2.avif">
+          <div class="slider-handle"></div>
+
+          <div class="img-label top-label" data-i18n="galleryBefore">Before</div>
+          <div class="img-label bottom-label" data-i18n="galleryAfter">After</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+      <h2 data-i18n="galleryFeatured">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT -->
+        <div class="project-card">
+          <img src="./assets/images/gallery/gallery-1.avif" class="project-img lightbox-trigger"/>
+
+          <div class="project-content">
+            <h3 data-i18n="galleryProject1Title">Modern Pool & Lounge Area</h3>
+            <p data-i18n="galleryProject1Text">
+              Complete backyard transformation including in-ground pool,
+              eco-finish gray resembling natural stone, and sky gray XL tiles from Rinox.
+            </p>
+
+            <div class="project-tags">
+              <span>Topaze</span>
+              <span>12x24</span>
+              <span>Eco-Finish gray</span>
+              <span>Sky gray XL tiles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT -->
+        <div class="project-card">
+          <img src="./assets/images/project2.jpg" class="project-img lightbox-trigger"/>
+
+          <div class="project-content">
+            <h3 data-i18n="galleryProject2Title">Stone Patio & Pergola</h3>
+            <p data-i18n="galleryProject2Text">
+              Elegant paver patio with custom pergola structure and
+              landscaping integration.
+            </p>
+
+            <div class="project-tags">
+              <span>Paving</span>
+              <span>Pergola</span>
+              <span>Planting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT -->
+        <div class="project-card">
+          <img src="./assets/images/project3.jpg" class="project-img lightbox-trigger"/>
+
+          <div class="project-content">
+            <h3 data-i18n="galleryProject3Title">Full Backyard Redesign</h3>
+            <p data-i18n="galleryProject3Text">
+              Excavation, grading, retaining walls and complete outdoor layout redesign.
+            </p>
+
+            <div class="project-tags">
+              <span>Excavation</span>
+              <span>Walls</span>
+              <span>Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div class="partner-links">
+      <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
+      <a href="https://www.azoria.ca/en/" target="_blank" rel="noopener noreferrer" class="partner-link-aquarino">
+        <img src="./assets/images/aquarino.png" alt="Aquarino" />
+      </a>
+      <a href="https://www.azoria.ca/en/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/azoria.svg" alt="Azoria" />
+      </a>
+      <a href="https://skella.ca/" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/rinox.svg" alt="Skella Group" />
+      </a>
+    </div>
+    <div class="social-links">
+      <span class="social-label" data-i18n="socialLabel">Follow us</span>
+      <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100064180712995" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </div>
+    <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

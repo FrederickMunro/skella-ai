@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skella | Pool Services</title>
+    <title data-i18n="pageTitlePools">Skella | Pool Services</title>
     <meta
       name="description"
       content="Skella pool design and installation services for premium residential backyards."
@@ -23,28 +23,38 @@
         <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
       </a>
     
-      <nav class="nav">
-        <ul class="nav-list">
+      <div class="nav-wrapper">
+        <!-- HAMBURGER -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
     
-          <li class="dropdown">
-            <button class="dropdown-toggle">Pools ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="./pools.html">Colors</a></li>
-              <li><a href="./aquarino.html">Aquarino Collection</a></li>
-              <li><a href="./dolphin.html">Dolphin Collection</a></li>
-              <li><a href="./mova.html">Mova Collection</a></li>
-            </ul>
-          </li>
+        <!-- NAV -->
+        <nav class="nav" id="mobile-nav">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="./pools.html" data-i18n="navColors">Colors</a></li>
+                <li><a href="./aquarino.html" data-i18n="navAquarino">Aquarino Collection</a></li>
+                <li><a href="./dolphin.html" data-i18n="navDolphin">Dolphin Collection</a></li>
+                <li><a href="./mova.html" data-i18n="navMova">Mova Collection</a></li>
+              </ul>
+            </li>
+            <li><a href="./landscaping.html" data-i18n="navLandscaping">Landscaping</a></li>
+            <li><a href="./excavation.html" data-i18n="navExcavation">Excavation</a></li>
+            <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
+            <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
     
-          <li><a href="./landscaping.html">Landscaping</a></li>
-          <li><a href="./excavation.html">Excavation</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    
-      <button id="lang-toggle" class="lang-toggle">
-        <span data-i18n="toggleLabel">FR</span>
-      </button>
+            <li class="mobile-lang">
+              <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -55,10 +65,11 @@
           From planning to first swim, we deliver complete pool projects with reliable timelines,
           durable materials, and clean execution.
         </p>
+
         <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:hello@skella.com" data-i18n="poolsCta"
-            >Request a Pool Quote</a
-          >
+          <a class="btn btn-primary" href="./quote.html" data-i18n="collectionCta">
+            Request a Quote
+          </a>
           <a class="btn btn-secondary" href="./index.html" data-i18n="backHome">Back to Home</a>
         </div>
       </section>
@@ -262,7 +273,7 @@
             <h3 data-i18n="aquarinoCardTitle">Aquarino Collection</h3>
           </a>
           <a href="./dolphin.html" class="service-card service-dolphin service-link">
-            <h3 data-i18n="dolphineCardTitle">Dolphin Collection</h3>
+            <h3 data-i18n="dolphinCardTitle">Dolphin Collection</h3>
           </a>
           <a href="./mova.html" class="service-card service-mova service-link">
             <h3 data-i18n="movaCardTitle">Mova Collection</h3>

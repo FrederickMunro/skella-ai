@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skella | Aquarino Pools</title>
+    <title data-i18n="pageTitleAquarino">Skella | Aquarino Pools</title>
     <meta
       name="description"
       content="Premium pool designs from Aquarino, installed by Skella."
@@ -21,58 +21,67 @@
 
   <body>
     <div class="bg-gradient"></div>
-
     <header class="site-header container">
       <a class="brand" href="./index.html" aria-label="Skella home">
         <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
       </a>
     
-      <nav class="nav">
-        <ul class="nav-list">
+      <div class="nav-wrapper">
+        <!-- HAMBURGER -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
     
-          <li class="dropdown">
-            <button class="dropdown-toggle">Pools ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="./pools.html">Colors</a></li>
-              <li><a href="./aquarino.html">Aquarino Collection</a></li>
-              <li><a href="./dolphin.html">Dolphin Collection</a></li>
-              <li><a href="./mova.html">Mova Collection</a></li>
-            </ul>
-          </li>
+        <!-- NAV -->
+        <nav class="nav" id="mobile-nav">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="./pools.html" data-i18n="navColors">Colors</a></li>
+                <li><a href="./aquarino.html" data-i18n="navAquarino">Aquarino Collection</a></li>
+                <li><a href="./dolphin.html" data-i18n="navDolphin">Dolphin Collection</a></li>
+                <li><a href="./mova.html" data-i18n="navMova">Mova Collection</a></li>
+              </ul>
+            </li>
+            <li><a href="./landscaping.html" data-i18n="navLandscaping">Landscaping</a></li>
+            <li><a href="./excavation.html" data-i18n="navExcavation">Excavation</a></li>
+            <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
+            <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
     
-          <li><a href="./landscaping.html">Landscaping</a></li>
-          <li><a href="./excavation.html">Excavation</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    
-      <button id="lang-toggle" class="lang-toggle">
-        <span data-i18n="toggleLabel">FR</span>
-      </button>
+            <li class="mobile-lang">
+              <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
 
       <!-- HERO (same structure as other pages) -->
       <section class="sub-hero aquarino">
-        <p class="eyebrow">Aquarino Collection</p>
-        <h1>Pool Designs</h1>
-        <p>
+        <p class="eyebrow" data-i18n="aquarinoEyebrow">Aquarino Collection</p>
+        <h1 data-i18n="aquarinoHeroTitle">Pool Designs</h1>
+        <p data-i18n="aquarinoHeroText">
           Discover premium Aquarino pool models installed by Skella.
           Designed for elegance, durability, and modern outdoor living.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:hello@skella.com">
-            Request a Pool Quote
+          <a class="btn btn-primary" href="./quote.html" data-i18n="collectionCta">
+            Request a Quote
           </a>
-          <a class="btn btn-secondary" href="./index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="./index.html" data-i18n="backHome">Back to Home</a>
         </div>
       </section>
 
       <!-- POOLS GRID -->
       <section class="services-list">
-        <h2>Available Pool Models</h2>
+        <h2 data-i18n="modelsTitle">Available Pool Models</h2>
 
         <div class="pool-grid">
 
@@ -81,12 +90,12 @@
             <img class="pool-image" src="./assets/images/aquarino/diamant.jpg" alt="Diamant Pool" />
             <img class="pool-model" src="./assets/images/aquarino/diamant-model.png" />
             <h3>Diamant</h3>
-            <p>
+            <p data-i18n="aquarinoDescDiamant">
               Small but versatile pool, perfect for compact spaces or spa option.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 3'9"</span>
-              <span><strong>Size:</strong> 8'x10'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 3'9"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x10'</span>
             </div>
           </article>
 
@@ -95,12 +104,12 @@
             <img class="pool-image" src="./assets/images/aquarino/topaze.jpg" alt="Topaze Pool" />
             <img class="pool-model" src="./assets/images/aquarino/topaze-model.png" />
             <h3>Topaze</h3>
-            <p>
+            <p data-i18n="aquarinoDescTopaze">
               Best-selling sleek design available in multiple formats.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 8'x14', 12'x20', 12'x24', 12'x26'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x14', 12'x20', 12'x24', 12'x26'</span>
             </div>
           </article>
 
@@ -109,12 +118,12 @@
             <img class="pool-image" src="./assets/images/aquarino/zircon.jpg" alt="Zircon Pool" />
             <img class="pool-model" src="./assets/images/aquarino/zircon-model.png" />
             <h3>Zircon</h3>
-            <p>
+            <p data-i18n="aquarinoDescZircon">
               Swim-focused design with side benches for relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 5'</span>
-              <span><strong>Size:</strong> 12'x22', 12'x27'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x22', 12'x27'</span>
             </div>
           </article>
 
@@ -123,12 +132,12 @@
             <img class="pool-image" src="./assets/images/aquarino/lazuli.jpg" alt="Lazuli Pool" />
             <img class="pool-model" src="./assets/images/aquarino/lazuli-model.png" />
             <h3>Lazuli</h3>
-            <p>
+            <p data-i18n="aquarinoDescLazuli">
               Lounge-style pool with large swimming area for entertainment.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 12'x28', 12'x32'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x28', 12'x32'</span>
             </div>
           </article>
 
@@ -137,12 +146,12 @@
             <img class="pool-image" src="./assets/images/aquarino/quartz.jpg" alt="Quartz Pool" />
             <img class="pool-model" src="./assets/images/aquarino/quartz-model.png" />
             <h3>Quartz</h3>
-            <p>
+            <p data-i18n="aquarinoDescQuartz">
               Largest beach-style pool with family-friendly layout.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 14'x31', 14'x36'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x31', 14'x36'</span>
             </div>
           </article>
 
@@ -151,12 +160,12 @@
             <img class="pool-image" src="./assets/images/aquarino/larimar.jpg" alt="Larimar Pool" />
             <img class="pool-model" src="./assets/images/aquarino/larimar-model.png" />
             <h3>Larimar</h3>
-            <p>
+            <p data-i18n="aquarinoDescLarimar">
               Perfect for social lounging and sunny relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'6"</span>
-              <span><strong>Size:</strong> 10'x25'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'6"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 10'x25'</span>
             </div>
           </article>
 
@@ -165,12 +174,12 @@
             <img class="pool-image" src="./assets/images/aquarino/perla.jpg" alt="Perla Pool" />
             <img class="pool-model" src="./assets/images/aquarino/perla-model.png" />
             <h3>Perla</h3>
-            <p>
+            <p data-i18n="aquarinoDescPerla">
               Integrated beach design combining play and relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 12'x24'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x24'</span>
             </div>
           </article>
 
@@ -179,12 +188,12 @@
             <img class="pool-image" src="./assets/images/aquarino/opale.jpg" alt="Opale Pool" />
             <img class="pool-model" src="./assets/images/aquarino/opale-model.png" />
             <h3>Opale</h3>
-            <p>
+            <p data-i18n="aquarinoDescOpale">
               Versatile pool balancing modern design and comfort.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 8'x16', 12'x20'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x16', 12'x20'</span>
             </div>
           </article>
 
@@ -193,12 +202,12 @@
             <img class="pool-image" src="./assets/images/aquarino/saphir.jpg" alt="Saphir Pool" />
             <img class="pool-model" src="./assets/images/aquarino/saphir-model.png" />
             <h3>Saphir</h3>
-            <p>
+            <p data-i18n="aquarinoDescSaphir">
               Spa-style pool with hydrotherapy and relaxation space.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'10"</span>
-              <span><strong>Size:</strong> 14'x31', 14'x36'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x31', 14'x36'</span>
             </div>
           </article>
 
@@ -207,12 +216,12 @@
             <img class="pool-image" src="./assets/images/aquarino/tanza.jpg" alt="Tanza Pool" />
             <img class="pool-model" src="./assets/images/aquarino/tanza-model.png" />
             <h3>Tanza</h3>
-            <p>
+            <p data-i18n="aquarinoDescTanza">
               Shallow modular beach area ideal for kids and lounging.
             </p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 10"</span>
-              <span><strong>Size:</strong> 8'x11'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 10"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x11'</span>
             </div>
           </article>
 

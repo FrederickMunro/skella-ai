@@ -5,7 +5,7 @@ const translations = {
     heroTitle: "Build your dream backyard with Skella",
     heroText:
       "We design and install custom in-ground pools that transform outdoor spaces into places where families gather, unwind, and create memories.",
-    primaryCta: "Get a Free Quote",
+    primaryCta: "Request a Quote",
     secondaryCta: "Explore Services",
     stat1: "Pools Installed",
     stat2: "Years of Experience",
@@ -26,7 +26,7 @@ const translations = {
     excavationTitle: "Excavation Services",
     excavationText:
       "Our team delivers precise and efficient excavation for pool installations, landscape redesigns, and full backyard transformations.",
-    excavationCta: "Request an Excavation Quote",
+    excavationCta: "Request a Quote",
     backHome: "Back to Home",
     excavationFeature1Title: "Site Preparation",
     excavationFeature1Text: "Careful planning and layout before any dig begins.",
@@ -40,7 +40,7 @@ const translations = {
     poolsTitle: "Pool Services",
     poolsText:
       "From planning to first swim, we deliver complete pool projects with reliable timelines, durable materials, and clean execution.",
-    poolsCta: "Request a Pool Quote",
+    poolsCta: "Request a Quote",
     poolsFeature1Title: "Custom Design",
     poolsFeature1Text:
       "Pool layouts adapted to your property, goals, and style.",
@@ -54,7 +54,7 @@ const translations = {
     landscapingTitle: "Landscaping Services",
     landscapingText:
       "We complete your outdoor space with practical and elegant landscaping that ties the pool, hardscape, and yard into one cohesive design.",
-    landscapingCta: "Request a Landscaping Quote",
+    landscapingCta: "Request a Quote",
     landscapingFeature1Title: "Hardscape Integration",
     landscapingFeature1Text:
       "Coordinated walkways, coping, and deck transitions.",
@@ -83,7 +83,7 @@ const translations = {
     socialLabel: "Follow us",
     ctaTitle: "Ready to build your pool?",
     ctaText: "Let us bring your project to life with quality and care.",
-    ctaButton: "Contact Skella",
+    ctaButton: "Contact Us",
     footerText: "Skella Pool Installation - Built for family moments.",
     colorTitle: "Our Colors",
     colorSelDeMer: "Sea Salt",
@@ -95,99 +95,236 @@ const translations = {
     aquarinoCardTitle: "Aquarino Collection",
     dolphinCardTitle: "Dolphin Collection",
     movaCardTitle: "Mova Collection",
-    collectionsTitle: "Our Collections"
+    collectionsTitle: "Our Collections",
+    navPools: "Pools ▾",
+    navColors: "Colors",
+    navAquarino: "Aquarino Collection",
+    navDolphin: "Dolphin Collection",
+    navMova: "Mova Collection",
+    navLandscaping: "Landscaping",
+    navExcavation: "Excavation",
+    navGallery: "Gallery",
+    navContact: "Contact",
+    menuAria: "Menu",
+    pageTitleHome: "Skella | Pool Installation Experts",
+    pageTitlePools: "Skella | Pool Services",
+    pageTitleAquarino: "Skella | Aquarino Pools",
+    pageTitleDolphin: "Skella | Dolphin Pools",
+    pageTitleMova: "Skella | Mova Pools",
+    pageTitleLandscaping: "Skella | Landscaping",
+    pageTitleExcavation: "Skella | Excavation",
+    pageTitleGallery: "Skella | Projects Gallery",
+    pageTitleContact: "Skella | Contact",
+    collectionCta: "Request a Quote",
+    depthLabel: "Depth:",
+    sizeLabel: "Size:",
+    altLabel: "Alt:",
+    landscapingServicesTitle: "Our Landscaping Services",
+    excavationServicesTitle: "Our Excavation Services",
+    svcEarthworkTitle: "Earthwork",
+    svcEarthworkDesc: "Preparing the land for all your outdoor projects.",
+    svcPavingTitle: "Paving Stone",
+    svcPavingDesc: "Professional installation of paving stones for entrances, sidewalks, and terraces.",
+    svcDesignTitle: "Designer Services",
+    svcDesignDesc: "Custom design for a unique outdoor layout.",
+    svcFenceTitle: "Fence Installation",
+    svcFenceDesc: "Installation of fences for security and aesthetics.",
+    svcKitchenTitle: "Outdoor Kitchen",
+    svcKitchenDesc: "Creation of functional and modern outdoor kitchens.",
+    svcPergolaTitle: "Pergola",
+    svcPergolaDesc: "Installation of pergolas for elegant shaded spaces.",
+    svcPlantingTitle: "Planting",
+    svcPlantingDesc: "Adding plants and trees to beautify your spaces.",
+    svcFountainTitle: "Water Fountain",
+    svcFountainDesc: "Installation of fountains for a relaxing touch.",
+    svcWoodDeckTitle: "Wooden Terrace",
+    svcWoodDeckDesc: "Design and installation of wooden terraces for a natural look.",
+    svcCompositeDeckTitle: "Composite Terrace",
+    svcCompositeDeckDesc: "Durable and modern composite decks to upgrade your yard.",
+    svcWallTitle: "Wall",
+    svcWallDesc: "Construction of low walls to structure and define your spaces.",
+    svcIrrigationTitle: "Irrigation System",
+    svcIrrigationDesc: "Installation of efficient watering systems for lawns and plants.",
+    svcDemolitionTitle: "Demolition",
+    svcDemolitionDesc: "Dismantling or removal of structures to prepare your site for new projects.",
+    svcDrainTitle: "French Drain",
+    svcDrainDesc: "Installation and repair of drainage systems to redirect water away from foundations.",
+    svcWaterproofTitle: "Foundation Waterproofing",
+    svcWaterproofDesc: "Protects your foundation from water damage and long-term structural issues.",
+    svcPyriteTitle: "Pyrite Removal",
+    svcPyriteDesc: "Removal of pyrite to prevent swelling and cracking in concrete structures.",
+    svcGradingTitle: "Land Leveling",
+    svcGradingDesc: "Precise grading for drainage, stability, and preparation of construction sites.",
+    svcRetainingTitle: "Retaining Wall",
+    svcRetainingDesc: "Structural walls to stabilize slopes and improve usable outdoor space.",
+    aquarinoEyebrow: "Aquarino Collection",
+    aquarinoHeroTitle: "Pool Designs",
+    aquarinoHeroText: "Discover premium Aquarino pool models installed by Skella. Designed for elegance, durability, and modern outdoor living.",
+    modelsTitle: "Available Pool Models",
+    dolphinEyebrow: "Dolphin Collection",
+    dolphinHeroTitle: "Pool Designs",
+    dolphinHeroText: "Explore Dolphin fiberglass pool models installed by Skella. Built for durability, comfort, and modern outdoor living.",
+    dolphinRectTitle: "Rectangular Models",
+    dolphinFreeformTitle: "Freeform Models",
+    dolphinClassicTitle: "Classic Models",
+    movaEyebrow: "Mova Collection",
+    movaHeroTitle: "Modern Pool Designs",
+    movaHeroText: "Explore the Mova collection of fiberglass pools — designed for comfort, performance, and elegant outdoor living.",
+    movaSectionSub: "From compact spa-style pools to full-length swim lanes.",
+    contactEyebrow: "Get in Touch",
+    contactTitle: "Contact Us",
+    contactText: "Have a project in mind? Reach out and we’ll help you plan your perfect outdoor space.",
+    contactInfoTitle: "Contact Information",
+    contactPhoneLabel: "Phone",
+    contactEmailLabel: "Email",
+    contactAddressLabel: "Address",
+    contactFormTitle: "Send a Message",
+    contactNamePlaceholder: "Your Name",
+    contactEmailPlaceholder: "Email Address",
+    contactPhonePlaceholder: "Phone Number",
+    contactMessagePlaceholder: "Tell us about your project...",
+    contactSubmit: "Send Message",
+    galleryEyebrow: "Our Work",
+    galleryTitle: "Project Gallery",
+    galleryText: "Real transformations. From raw backyards to fully finished outdoor living spaces.",
+    galleryBeforeAfter: "Before & After Transformations",
+    galleryFeatured: "Featured Projects",
+    galleryBefore: "Before",
+    galleryAfter: "After",
+    galleryProject1Title: "Modern Pool & Lounge Area",
+    galleryProject1Text: "Complete backyard transformation including in-ground pool, eco-finish gray resembling natural stone, and sky gray XL tiles from Rinox.",
+    galleryProject2Title: "Stone Patio & Pergola",
+    galleryProject2Text: "Elegant paver patio with custom pergola structure and landscaping integration.",
+    galleryProject3Title: "Full Backyard Redesign",
+    galleryProject3Text: "Excavation, grading, retaining walls and complete outdoor layout redesign.",
+    poolDescLargeSideSteps: "Large format pool with side steps.",
+    poolDescRectFlatBottom: "Rectangular pool with a flat bottom.",
+    poolDescLargeSlopedBenches: "Large pool with sloped bottom and built-in benches.",
+    poolDescFlatBenches: "Flat-bottom pool with integrated benches.",
+    poolDescBeachEntry: "Large rectangular pool with beach entry and slope.",
+    poolDescLargestCanada: "Largest fiberglass pool available in Canada.",
+    poolDescFreeformSlope: "Freeform pool with a sloping bottom.",
+    poolDescClassicSlope: "Classic model with a sloping bottom.",
+    aquarinoDescDiamant: "Small but versatile pool, perfect for compact spaces or spa option.",
+    aquarinoDescTopaze: "Best-selling sleek design available in multiple formats.",
+    aquarinoDescZircon: "Swim-focused design with side benches for relaxation.",
+    aquarinoDescLazuli: "Lounge-style pool with large swimming area for entertainment.",
+    aquarinoDescQuartz: "Largest beach-style pool with family-friendly layout.",
+    aquarinoDescLarimar: "Perfect for social lounging and sunny relaxation.",
+    aquarinoDescPerla: "Integrated beach design combining play and relaxation.",
+    aquarinoDescOpale: "Versatile pool balancing modern design and comfort.",
+    aquarinoDescSaphir: "Spa-style pool with hydrotherapy and relaxation space.",
+    aquarinoDescTanza: "Shallow modular beach area ideal for kids and lounging.",
+    poolDescSpaCompact: "Spa-style compact relaxation pool.",
+    poolDescSmallYard: "Perfect for small yards and refreshing summer use.",
+    poolDescSpaceEfficient: "Elegant, space-efficient design with great swim area.",
+    poolDescTrainingJet: "Built for training with optional resistance jet system.",
+    poolDescSwimLane: "Extended swim lane for serious swimmers.",
+    poolDescBalancedSeating: "Balanced design with seating and corner steps.",
+    poolDescCompactElegance: "Compact elegance with integrated seating.",
+    poolDescSpaciousPlay: "Spacious layout balancing play and relaxation.",
+    poolDescShallowKids: "Shallow relaxation pool for kids and lounging.",
+    poolDescComfortBenches: "Comfort-focused pool with side benches.",
+    poolDescClassicMid: "Classic mid-size pool for everyday enjoyment.",
+    poolDescLargeTerrace: "Large relaxation zone with shallow terrace.",
+    poolDescSlopedPlay: "Sloped bottom ideal for swimming and play.",
+    lightboxClose: "Close",
+    backToTopAria: "Back to top",
   },
+
   fr: {
     toggleLabel: "EN",
     eyebrow: "Installation de piscines haut de gamme",
-    heroTitle: "Creez la cour de vos reves avec Skella",
+    heroTitle: "Créez la cour de vos rêves avec Skella",
     heroText:
-      "Nous concevons et installons des piscines creusees sur mesure qui transforment vos espaces exterieurs en lieux de detente et de souvenirs en famille.",
-    primaryCta: "Obtenir une soumission gratuite",
+      "Nous concevons et installons des piscines creusées sur mesure qui transforment vos espaces extérieurs en lieux de détente et de souvenirs en famille.",
+    primaryCta: "Obtenir une soumission",
     secondaryCta: "Voir nos services",
-    stat1: "Piscines installees",
-    stat2: "Ans d'experience",
+    stat1: "Piscines installées",
+    stat2: "Ans d’expérience",
     stat3: "Satisfaction client",
-    cardTitle: "Installation cle en main",
-    cardSubtitle: "Du concept a la premiere baignade",
+    cardTitle: "Installation clé en main",
+    cardSubtitle: "Du concept à la première baignade",
     servicesTitle: "Nos services principaux",
     service1Title: "Piscines",
     service1Text:
-      "Conception et installation de piscines sur mesure adaptees a votre terrain.",
+      "Conception et installation de piscines sur mesure adaptées à votre terrain.",
     service2Title: "Excavation",
     service2Text:
-      "Preparation du site et excavation precise pour bien lancer chaque projet.",
-    service3Title: "Amenagement paysager",
+      "Préparation du site et excavation précise pour bien lancer chaque projet.",
+    service3Title: "Aménagement paysager",
     service3Text:
-      "Finitions exterieures completes pour une cour elegante et harmonieuse.",
+      "Finitions extérieures complètes pour une cour élégante et harmonieuse.",
     excavationEyebrow: "Services Skella",
-    excavationTitle: "Services d excavation",
+    excavationTitle: "Services d’excavation",
     excavationText:
-      "Notre equipe realise des travaux d excavation precis et efficaces pour les piscines, la reconfiguration du terrain et les transformations completes de cour.",
-    excavationCta: "Demander une soumission excavation",
-    backHome: "Retour a l accueil",
-    excavationFeature1Title: "Preparation du site",
+      "Notre équipe réalise des travaux d’excavation précis et efficaces pour les piscines, la reconfiguration du terrain et les transformations complètes de cour.",
+    excavationCta: "Obtenir une soumission",
+    backHome: "Retour à l’accueil",
+    excavationFeature1Title: "Préparation du site",
     excavationFeature1Text:
-      "Planification et implantation soignees avant le debut des travaux.",
-    excavationFeature2Title: "Excavation de precision",
+      "Planification et implantation soignées avant le début des travaux.",
+    excavationFeature2Title: "Excavation de précision",
     excavationFeature2Text:
-      "Excavation precise pour coque de piscine, drainage et nivellement.",
+      "Excavation précise pour coque de piscine, drainage et nivellement.",
     excavationFeature3Title: "Finition propre",
     excavationFeature3Text:
-      "Gestion organisee du chantier avec nettoyage efficace a la livraison.",
+      "Gestion organisée du chantier avec nettoyage efficace à la livraison.",
     poolsEyebrow: "Services Skella",
     poolsTitle: "Services de piscine",
     poolsText:
-      "De la planification a la premiere baignade, nous livrons des projets de piscine complets avec des delais fiables et une execution soignee.",
-    poolsCta: "Demander une soumission piscine",
+      "De la planification à la première baignade, nous livrons des projets de piscine complets avec des délais fiables et une exécution soignée.",
+    poolsCta: "Obtenir une soumission",
     poolsFeature1Title: "Conception sur mesure",
     poolsFeature1Text:
-      "Des configurations adaptees a votre terrain, vos objectifs et votre style.",
-    poolsFeature2Title: "Installation cle en main",
+      "Des configurations adaptées à votre terrain, vos objectifs et votre style.",
+    poolsFeature2Title: "Installation clé en main",
     poolsFeature2Text:
-      "Coordination complete de l excavation jusqu a la mise en service.",
+      "Coordination complète de l’excavation jusqu’à la mise en service.",
     poolsFeature3Title: "Finitions",
     poolsFeature3Text:
-      "Margelles, surfaces et details finaux pour une cour complete.",
+      "Margelles, surfaces et détails finaux pour une cour complète.",
     landscapingEyebrow: "Services Skella",
-    landscapingTitle: "Services d amenagement paysager",
+    landscapingTitle: "Services d’aménagement paysager",
     landscapingText:
-      "Nous completions votre espace exterieur avec un amenagement pratique et elegant qui relie la piscine, les surfaces et la cour dans un design coherent.",
-    landscapingCta: "Demander une soumission paysagement",
-    landscapingFeature1Title: "Integration des surfaces",
+      "Nous complétons votre espace extérieur avec un aménagement pratique et élégant qui relie la piscine, les surfaces et la cour dans un design cohérent.",
+    landscapingCta: "Obtenir une soumission",
+    landscapingFeature1Title: "Intégration des aménagements",
     landscapingFeature1Text:
-      "Passages, margelles et transitions de terrasse coordonnes.",
-    landscapingFeature2Title: "Plantation et vegetation",
+      "Passages, margelles et transitions de terrasse coordonnés.",
+    landscapingFeature2Title: "Plantation et végétation",
     landscapingFeature2Text:
-      "Selection et implantation adaptees a votre espace et au climat.",
-    landscapingFeature3Title: "Finition exterieure",
+      "Sélection et implantation adaptées à votre espace et au climat.",
+    landscapingFeature3Title: "Finition extérieure",
     landscapingFeature3Text:
-      "Eclairage, accents et details finaux pour un rendu soigné.",
+      "Éclairage, accents et détails finaux pour un rendu soigné.",
     processTitle: "Un processus simple et clair",
-    process1: "Appel de decouverte et visite sur place",
-    process2: "Conception, planification et soumission detaillee",
+    process1: "Appel de découverte et visite sur place",
+    process2: "Conception, planification et soumission détaillée",
     process3: "Construction, installation et inspection finale",
-    reviewsBadge: "Note moyenne des clients: 5.0",
+    reviewsBadge: "Note moyenne des clients : 5.0",
     reviewsTitle: "Ce que disent nos clients",
     review1Text:
-      '"Skella a transforme notre cour en espace prefere pour la famille. L equipe a ete professionnelle du debut a la fin."',
+      '"Skella a transformé notre cour en notre endroit préféré pour passer du temps en famille. L’équipe a été professionnelle du début à la fin."',
     review1Author: "- La famille Martin",
     review2Text:
-      '"Respect des delais, excellente communication et qualite remarquable. Nous les recommandons sans hesitation."',
+      '"Respect des délais, excellente communication et qualité remarquable. Nous les recommandons sans hésitation."',
     review2Author: "- Isabelle R.",
     review3Text:
-      '"Le resultat final depasse nos attentes. La piscine et l amenagement sont magnifiques."',
+      '"Le résultat final dépasse nos attentes. La piscine et l’aménagement sont magnifiques."',
     review3Author: "- Daniel et Chloe P.",
     partnersLabel: "Marques partenaires",
     socialLabel: "Suivez-nous",
-    ctaTitle: "Pret a construire votre piscine?",
-    ctaText: "Confiez-nous votre projet pour un resultat fiable et elegant.",
-    ctaButton: "Contacter Skella",
-    footerText: "Skella Installation de piscines - Cree pour les moments en famille.",
+    ctaTitle: "Prêt à construire votre piscine?",
+    ctaText:
+      "Confiez-nous votre projet pour un résultat fiable et élégant.",
+    ctaButton: "Contactez-nous",
+    footerText:
+      "Skella Installation de piscines - Conçu pour les moments en famille.",
     colorTitle: "Nos couleurs",
     colorSelDeMer: "Sel de mer",
     colorGrisArtic: "Gris arctique",
-    colorOcean: "Ocean",
+    colorOcean: "Océan",
     colorAqua: "Aqua",
     colorPacific: "Pacifique",
     colorGalaxy: "Galaxie",
@@ -195,14 +332,149 @@ const translations = {
     dolphinCardTitle: "Collection Dolphin",
     movaCardTitle: "Collection Mova",
     collectionsTitle: "Nos Collections",
+    navPools: "Piscines ▾",
+    navColors: "Couleurs",
+    navAquarino: "Collection Aquarino",
+    navDolphin: "Collection Dolphin",
+    navMova: "Collection Mova",
+    navLandscaping: "Aménagement paysager",
+    navExcavation: "Excavation",
+    navGallery: "Galerie",
+    navContact: "Contact",
+    menuAria: "Menu",
+    pageTitleHome: "Skella | Experts en installation de piscines",
+    pageTitlePools: "Skella | Services de piscine",
+    pageTitleAquarino: "Skella | Piscines Aquarino",
+    pageTitleDolphin: "Skella | Piscines Dolphin",
+    pageTitleMova: "Skella | Piscines Mova",
+    pageTitleLandscaping: "Skella | Aménagement paysager",
+    pageTitleExcavation: "Skella | Excavation",
+    pageTitleGallery: "Skella | Galerie de projets",
+    pageTitleContact: "Skella | Contact",
+    collectionCta: "Obtenir une soumission",
+    depthLabel: "Profondeur :",
+    sizeLabel: "Dimension :",
+    altLabel: "Alt. :",
+    landscapingServicesTitle: "Nos services d’aménagement paysager",
+    excavationServicesTitle: "Nos services d’excavation",
+    svcEarthworkTitle: "Terrassement",
+    svcEarthworkDesc: "Préparation du terrain pour tous vos projets extérieurs.",
+    svcPavingTitle: "Pavé uni",
+    svcPavingDesc: "Installation professionnelle de pavés pour entrées, trottoirs et terrasses.",
+    svcDesignTitle: "Services de design",
+    svcDesignDesc: "Conception sur mesure pour un aménagement extérieur unique.",
+    svcFenceTitle: "Installation de clôtures",
+    svcFenceDesc: "Installation de clôtures pour la sécurité et l’esthétique.",
+    svcKitchenTitle: "Cuisine extérieure",
+    svcKitchenDesc: "Création de cuisines extérieures fonctionnelles et modernes.",
+    svcPergolaTitle: "Pergola",
+    svcPergolaDesc: "Installation de pergolas pour des espaces ombragés élégants.",
+    svcPlantingTitle: "Plantation",
+    svcPlantingDesc: "Ajout de plantes et d’arbres pour embellir vos espaces.",
+    svcFountainTitle: "Fontaine",
+    svcFountainDesc: "Installation de fontaines pour une touche relaxante.",
+    svcWoodDeckTitle: "Terrasse en bois",
+    svcWoodDeckDesc: "Conception et installation de terrasses en bois pour un look naturel.",
+    svcCompositeDeckTitle: "Terrasse composite",
+    svcCompositeDeckDesc: "Terrasses composites durables et modernes pour rehausser votre cour.",
+    svcWallTitle: "Mur",
+    svcWallDesc: "Construction de murets pour structurer et définir vos espaces.",
+    svcIrrigationTitle: "Système d’irrigation",
+    svcIrrigationDesc: "Installation de systèmes d’arrosage efficaces pour pelouses et plantes.",
+    svcDemolitionTitle: "Démolition",
+    svcDemolitionDesc: "Démolition ou retrait de structures pour préparer votre site aux nouveaux projets.",
+    svcDrainTitle: "Drain français",
+    svcDrainDesc: "Installation et réparation de drains pour éloigner l’eau des fondations.",
+    svcWaterproofTitle: "Imperméabilisation des fondations",
+    svcWaterproofDesc: "Protège vos fondations contre l’eau et les problèmes structurels à long terme.",
+    svcPyriteTitle: "Retrait de pyrite",
+    svcPyriteDesc: "Retrait de la pyrite pour prévenir le gonflement et les fissures du béton.",
+    svcGradingTitle: "Nivellement de terrain",
+    svcGradingDesc: "Nivellement précis pour drainage, stabilité et préparation des chantiers.",
+    svcRetainingTitle: "Mur de soutènement",
+    svcRetainingDesc: "Murs structuraux pour stabiliser les pentes et agrandir l’espace utilisable.",
+    aquarinoEyebrow: "Collection Aquarino",
+    aquarinoHeroTitle: "Modèles de piscines",
+    aquarinoHeroText: "Découvrez les modèles Aquarino installés par Skella — élégance, durabilité et vie extérieure moderne.",
+    modelsTitle: "Modèles de piscines disponibles",
+    dolphinEyebrow: "Collection Dolphin",
+    dolphinHeroTitle: "Modèles de piscines",
+    dolphinHeroText: "Explorez les piscines en fibre de verre Dolphin installées par Skella — durabilité, confort et vie extérieure moderne.",
+    dolphinRectTitle: "Modèles rectangulaires",
+    dolphinFreeformTitle: "Modèles libres",
+    dolphinClassicTitle: "Modèles classiques",
+    movaEyebrow: "Collection Mova",
+    movaHeroTitle: "Modèles de piscines modernes",
+    movaHeroText: "Explorez la collection Mova — conçue pour le confort, la performance et une vie extérieure élégante.",
+    movaSectionSub: "Des piscines compactes aux couloirs de nage complets.",
+    contactEyebrow: "Contactez-nous",
+    contactTitle: "Nous joindre",
+    contactText: "Un projet en tête? Écrivez-nous et nous vous aiderons à planifier l’espace extérieur idéal.",
+    contactInfoTitle: "Coordonnées",
+    contactPhoneLabel: "Téléphone",
+    contactEmailLabel: "Courriel",
+    contactAddressLabel: "Adresse",
+    contactFormTitle: "Envoyer un message",
+    contactNamePlaceholder: "Votre nom",
+    contactEmailPlaceholder: "Adresse courriel",
+    contactPhonePlaceholder: "Numéro de téléphone",
+    contactMessagePlaceholder: "Parlez-nous de votre projet...",
+    contactSubmit: "Envoyer le message",
+    galleryEyebrow: "Nos réalisations",
+    galleryTitle: "Galerie de projets",
+    galleryText: "De vraies transformations — de la cour brute à l’espace extérieur entièrement fini.",
+    galleryBeforeAfter: "Transformations avant / après",
+    galleryFeatured: "Projets en vedette",
+    galleryBefore: "Avant",
+    galleryAfter: "Après",
+    galleryProject1Title: "Piscine moderne et coin détente",
+    galleryProject1Text: "Transformation complète incluant piscine creusée, fini écologique gris pierre et tuiles gris ciel XL de Rinox.",
+    galleryProject2Title: "Patio en pierre et pergola",
+    galleryProject2Text: "Patio en pavé élégant avec pergola sur mesure et aménagement paysager intégré.",
+    galleryProject3Title: "Réaménagement complet de cour",
+    galleryProject3Text: "Excavation, nivellement, murs de soutènement et réaménagement complet de l’espace extérieur.",
+    poolDescLargeSideSteps: "Grande piscine avec marches latérales.",
+    poolDescRectFlatBottom: "Piscine rectangulaire à fond plat.",
+    poolDescLargeSlopedBenches: "Grande piscine à fond incliné avec bancs intégrés.",
+    poolDescFlatBenches: "Piscine à fond plat avec bancs intégrés.",
+    poolDescBeachEntry: "Grande piscine rectangulaire avec entrée plage et pente.",
+    poolDescLargestCanada: "La plus grande piscine en fibre de verre au Canada.",
+    poolDescFreeformSlope: "Piscine libre à fond incliné.",
+    poolDescClassicSlope: "Modèle classique à fond incliné.",
+    aquarinoDescDiamant: "Petite piscine polyvalente, idéale pour les espaces compacts ou en mode spa.",
+    aquarinoDescTopaze: "Design épuré best-seller disponible en plusieurs formats.",
+    aquarinoDescZircon: "Design axé sur la nage avec bancs latéraux pour se détendre.",
+    aquarinoDescLazuli: "Piscine lounge avec grande zone de baignade pour recevoir.",
+    aquarinoDescQuartz: "Plus grande piscine plage avec aménagement familial.",
+    aquarinoDescLarimar: "Parfaite pour le bain de soleil et les moments entre amis.",
+    aquarinoDescPerla: "Design plage intégré alliant jeu et détente.",
+    aquarinoDescOpale: "Piscine polyvalente alliant design moderne et confort.",
+    aquarinoDescSaphir: "Piscine style spa avec espace hydrothérapie et détente.",
+    aquarinoDescTanza: "Zone plage modulaire peu profonde idéale pour enfants et détente.",
+    poolDescSpaCompact: "Petite piscine compacte style spa pour se détendre.",
+    poolDescSmallYard: "Parfaite pour petites cours et rafraîchissement estival.",
+    poolDescSpaceEfficient: "Design élégant et compact avec excellente zone de nage.",
+    poolDescTrainingJet: "Conçue pour l’entraînement avec système de jets optionnel.",
+    poolDescSwimLane: "Couloir de nage prolongé pour les nageurs sérieux.",
+    poolDescBalancedSeating: "Design équilibré avec sièges et marches de coin.",
+    poolDescCompactElegance: "Élégance compacte avec sièges intégrés.",
+    poolDescSpaciousPlay: "Grand aménagement équilibrant jeu et détente.",
+    poolDescShallowKids: "Piscine peu profonde pour enfants et détente.",
+    poolDescComfortBenches: "Piscine confortable avec bancs latéraux.",
+    poolDescClassicMid: "Piscine classique de taille moyenne pour le quotidien.",
+    poolDescLargeTerrace: "Grande zone de détente avec terrasse peu profonde.",
+    poolDescSlopedPlay: "Fond incliné idéal pour la nage et le jeu.",
+    lightboxClose: "Fermer",
+    backToTopAria: "Retour en haut",
   }
 };
 
 let currentLanguage = "en";
-const langToggle = document.getElementById("lang-toggle");
 
 function applyLanguage(language) {
   const table = translations[language];
+  if (!table) return;
+
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     if (table[key]) {
@@ -210,8 +482,27 @@ function applyLanguage(language) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-placeholder");
+    if (table[key]) {
+      node.placeholder = table[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-aria");
+    if (table[key]) {
+      node.setAttribute("aria-label", table[key]);
+    }
+  });
+
   document.documentElement.lang = language;
   localStorage.setItem("skella_language", language);
+}
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "fr" : "en";
+  applyLanguage(currentLanguage);
 }
 
 const storedLanguage = localStorage.getItem("skella_language");
@@ -220,10 +511,9 @@ if (storedLanguage && (storedLanguage === "en" || storedLanguage === "fr")) {
 }
 applyLanguage(currentLanguage);
 
-langToggle?.addEventListener("click", () => {
-  currentLanguage = currentLanguage === "en" ? "fr" : "en";
-  applyLanguage(currentLanguage);
-});
+document
+  .querySelectorAll("#lang-toggle, #lang-toggle-mobile")
+  .forEach((btn) => btn.addEventListener("click", toggleLanguage));
 
 document.querySelectorAll(".compare-vertical").forEach((container) => {
   const topImage = container.querySelector(".img-top");
@@ -275,8 +565,21 @@ document.querySelectorAll(".compare-vertical").forEach((container) => {
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobile-nav");
 
-hamburger?.addEventListener("click", () => {
-  mobileNav.classList.toggle("open");
+function closeMobileMenu() {
+  mobileNav?.classList.remove("open");
+  document.body.classList.remove("menu-open");
+}
+
+hamburger?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  mobileNav?.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
+});
+
+document.addEventListener("click", (e) => {
+  if (!mobileNav?.classList.contains("open")) return;
+  if (mobileNav.contains(e.target) || hamburger?.contains(e.target)) return;
+  closeMobileMenu();
 });
 
 /* DROPDOWN CLICK FOR MOBILE */
@@ -286,10 +589,98 @@ document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
   });
 });
 
-/* SYNC MOBILE LANGUAGE BUTTON */
-const mobileLangToggle = document.getElementById("lang-toggle-mobile");
+const serviceRows = document.querySelectorAll(".service-row");
 
-mobileLangToggle?.addEventListener("click", () => {
-  currentLanguage = currentLanguage === "en" ? "fr" : "en";
-  applyLanguage(currentLanguage);
-});
+const serviceObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+serviceRows.forEach((row) => {
+  serviceObserver.observe(row);
+}); 
+
+function initLightbox() {
+  let lightbox = document.getElementById("lightbox");
+
+  if (!lightbox) {
+    lightbox = document.createElement("div");
+    lightbox.id = "lightbox";
+    lightbox.className = "lightbox";
+    lightbox.innerHTML =
+      '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+      '<img class="lightbox-img" src="" alt="">';
+    document.body.appendChild(lightbox);
+  }
+
+  const lightboxImg = lightbox.querySelector(".lightbox-img");
+  const closeBtn = lightbox.querySelector(".lightbox-close");
+
+  const openLightbox = (img) => {
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt || "";
+    lightbox.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("open");
+    document.body.style.overflow = "";
+    lightboxImg.removeAttribute("src");
+  };
+
+  document
+    .querySelectorAll(".lightbox-trigger, .pool-image, .pool-model")
+    .forEach((img) => {
+      img.addEventListener("click", () => openLightbox(img));
+    });
+
+  closeBtn?.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("open")) {
+      closeLightbox();
+    }
+  });
+}
+
+initLightbox();
+
+function initBackToTop() {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "back-to-top";
+  btn.setAttribute("data-i18n-aria", "backToTopAria");
+  btn.setAttribute("aria-label", translations[currentLanguage]?.backToTopAria || "Back to top");
+  btn.innerHTML =
+    '<svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+    '<polyline points="7 15 12 10 17 15" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>' +
+    "</svg>";
+  document.body.appendChild(btn);
+
+  const showAfter = 400;
+
+  const updateVisibility = () => {
+    btn.classList.toggle("is-visible", window.scrollY > showAfter);
+  };
+
+  window.addEventListener("scroll", updateVisibility, { passive: true });
+  updateVisibility();
+
+  btn.addEventListener("click", () => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  });
+}
+
+initBackToTop();

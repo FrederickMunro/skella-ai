@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skella | Dolphin Pools</title>
+    <title data-i18n="pageTitleDolphin">Skella | Dolphin Pools</title>
     <meta
       name="description"
       content="Premium Dolphin pool designs installed by Skella."
@@ -21,58 +21,67 @@
 
   <body>
     <div class="bg-gradient"></div>
-
     <header class="site-header container">
       <a class="brand" href="./index.html" aria-label="Skella home">
         <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
       </a>
     
-      <nav class="nav">
-        <ul class="nav-list">
+      <div class="nav-wrapper">
+        <!-- HAMBURGER -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
     
-          <li class="dropdown">
-            <button class="dropdown-toggle">Pools ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="./pools.html">Colors</a></li>
-              <li><a href="./aquarino.html">Aquarino Collection</a></li>
-              <li><a href="./dolphin.html">Dolphin Collection</a></li>
-              <li><a href="./mova.html">Mova Collection</a></li>
-            </ul>
-          </li>
+        <!-- NAV -->
+        <nav class="nav" id="mobile-nav">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="./pools.html" data-i18n="navColors">Colors</a></li>
+                <li><a href="./aquarino.html" data-i18n="navAquarino">Aquarino Collection</a></li>
+                <li><a href="./dolphin.html" data-i18n="navDolphin">Dolphin Collection</a></li>
+                <li><a href="./mova.html" data-i18n="navMova">Mova Collection</a></li>
+              </ul>
+            </li>
+            <li><a href="./landscaping.html" data-i18n="navLandscaping">Landscaping</a></li>
+            <li><a href="./excavation.html" data-i18n="navExcavation">Excavation</a></li>
+            <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
+            <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
     
-          <li><a href="./landscaping.html">Landscaping</a></li>
-          <li><a href="./excavation.html">Excavation</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    
-      <button id="lang-toggle" class="lang-toggle">
-        <span data-i18n="toggleLabel">FR</span>
-      </button>
+            <li class="mobile-lang">
+              <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
 
       <!-- HERO -->
       <section class="sub-hero dolphin">
-        <p class="eyebrow">Dolphin Collection</p>
-        <h1>Pool Designs</h1>
-        <p>
+        <p class="eyebrow" data-i18n="dolphinEyebrow">Dolphin Collection</p>
+        <h1 data-i18n="dolphinHeroTitle">Pool Designs</h1>
+        <p data-i18n="dolphinHeroText">
           Explore Dolphin fiberglass pool models installed by Skella.
           Built for durability, comfort, and modern outdoor living.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:hello@skella.com">
-            Request a Pool Quote
+          <a class="btn btn-primary" href="./quote.html" data-i18n="collectionCta">
+            Request a Quote
           </a>
-          <a class="btn btn-secondary" href="./index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="./index.html" data-i18n="backHome">Back to Home</a>
         </div>
       </section>
 
       <!-- POOLS -->
       <section class="services-list">
-        <h2>Rectangular Models</h2>
+        <h2 data-i18n="dolphinRectTitle">Rectangular Models</h2>
 
         <div class="pool-grid">
 
@@ -81,10 +90,10 @@
             <img class="pool-image" src="./assets/images/dolphin/bayfield.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/bayfield-model.png" />
             <h3>Bayfield</h3>
-            <p>Large format pool with side steps.</p>
+            <p data-i18n="poolDescLargeSideSteps">Large format pool with side steps.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 5'</span>
-              <span><strong>Size:</strong> 13'6"x31', 15'x35'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 13'6"x31', 15'x35'</span>
             </div>
           </article>
 
@@ -93,10 +102,10 @@
             <img class="pool-image" src="./assets/images/dolphin/britannia.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/britannia-model.png" />
             <h3>Britannia</h3>
-            <p>Large format pool with side steps.</p>
+            <p data-i18n="poolDescLargeSideSteps">Large format pool with side steps.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 5'</span>
-              <span><strong>Size:</strong> 16'x35'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x35'</span>
             </div>
           </article>
 
@@ -105,10 +114,10 @@
             <img class="pool-image" src="./assets/images/dolphin/elora.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/elora-model.png" />
             <h3>Elora</h3>
-            <p>Rectangular pool with a flat bottom.</p>
+            <p data-i18n="poolDescRectFlatBottom">Rectangular pool with a flat bottom.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 5'</span>
-              <span><strong>Size:</strong> 12'x18'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x18'</span>
             </div>
           </article>
 
@@ -117,10 +126,10 @@
             <img class="pool-image" src="./assets/images/dolphin/kelowna.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/kelowna-model.png" />
             <h3>Kelowna</h3>
-            <p>Large pool with sloped bottom and built-in benches.</p>
+            <p data-i18n="poolDescLargeSlopedBenches">Large pool with sloped bottom and built-in benches.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'</span>
-              <span><strong>Size:</strong> 16'x36'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x36'</span>
             </div>
           </article>
 
@@ -129,10 +138,10 @@
             <img class="pool-image" src="./assets/images/dolphin/sandbanks.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/sandbanks-model.png" />
             <h3>Sandbanks</h3>
-            <p>Flat-bottom pool with integrated benches.</p>
+            <p data-i18n="poolDescFlatBenches">Flat-bottom pool with integrated benches.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 4'6"</span>
-              <span><strong>Size:</strong> 8'x17', 8'x26', 12'x26'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 4'6"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x17', 8'x26', 12'x26'</span>
             </div>
           </article>
 
@@ -141,10 +150,10 @@
             <img class="pool-image" src="./assets/images/dolphin/sauble.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/sauble-model.png" />
             <h3>Sauble</h3>
-            <p>Large rectangular pool with beach entry and slope.</p>
+            <p data-i18n="poolDescBeachEntry">Large rectangular pool with beach entry and slope.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'</span>
-              <span><strong>Size:</strong> 16'x41'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x41'</span>
             </div>
           </article>
 
@@ -153,10 +162,10 @@
             <img class="pool-image" src="./assets/images/dolphin/south-hampton.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/south-hampton-model.png" />
             <h3>South Hampton</h3>
-            <p>Large rectangular pool with beach entry and slope.</p>
+            <p data-i18n="poolDescBeachEntry">Large rectangular pool with beach entry and slope.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'</span>
-              <span><strong>Size:</strong> 14'x30'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x30'</span>
             </div>
           </article>
 
@@ -165,10 +174,10 @@
             <img class="pool-image" src="./assets/images/dolphin/tofino.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/tofino-model.png" />
             <h3>Tofino</h3>
-            <p>Largest fiberglass pool available in Canada.</p>
+            <p data-i18n="poolDescLargestCanada">Largest fiberglass pool available in Canada.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 8'</span>
-              <span><strong>Size:</strong> 16'x40'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 8'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x40'</span>
             </div>
           </article>
 
@@ -177,7 +186,7 @@
 
       <!-- FREEFORM POOLS -->
       <section class="services-list">
-        <h2>Freeform Models</h2>
+        <h2 data-i18n="dolphinFreeformTitle">Freeform Models</h2>
         <div class="pool-grid">
     
           <!-- DARLINGTON -->
@@ -185,10 +194,10 @@
             <img class="pool-image" src="./assets/images/dolphin/darlington.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/darlington-model.png" />
             <h3>Darlington</h3>
-            <p>Freeform pool with a sloping bottom.</p>
+            <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
             <div class="pool-specs">
-            <span><strong>Depth:</strong> 5'4"</span>
-            <span><strong>Size:</strong> 12'x25'</span>
+            <span><strong data-i18n="depthLabel">Depth:</strong> 5'4"</span>
+            <span><strong data-i18n="sizeLabel">Size:</strong> 12'x25'</span>
             </div>
           </article>
 
@@ -197,11 +206,11 @@
             <img class="pool-image" src="./assets/images/dolphin/oka.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/oka-model.png" />
             <h3>Oka</h3>
-            <p>Freeform pool with a sloping bottom.</p>
+            <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
             <div class="pool-specs">
-            <span><strong>Depth:</strong> 6'2"</span>
-            <span><strong>Size:</strong> 13'x33'</span>
-            <span><strong>Alt:</strong> 6'5" · 15'6"x36'</span>
+            <span><strong data-i18n="depthLabel">Depth:</strong> 6'2"</span>
+            <span><strong data-i18n="sizeLabel">Size:</strong> 13'x33'</span>
+            <span><strong data-i18n="altLabel">Alt:</strong> 6'5" · 15'6"x36'</span>
             </div>
           </article>
 
@@ -210,10 +219,10 @@
             <img class="pool-image" src="./assets/images/dolphin/dover.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/dover-model.png" />
             <h3>Dover</h3>
-            <p>Freeform pool with a sloping bottom.</p>
+            <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
             <div class="pool-specs">
-            <span><strong>Depth:</strong> 5'8"</span>
-            <span><strong>Size:</strong> 16'x38'</span>
+            <span><strong data-i18n="depthLabel">Depth:</strong> 5'8"</span>
+            <span><strong data-i18n="sizeLabel">Size:</strong> 16'x38'</span>
             </div>
           </article>
 
@@ -222,10 +231,10 @@
             <img class="pool-image" src="./assets/images/dolphin/wasaga.jpg" />
             <img class="pool-model" src="./assets/images/dolphin/wasaga-model.png" />
             <h3>Wasaga</h3>
-            <p>Freeform pool with a sloping bottom.</p>
+            <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
             <div class="pool-specs">
-            <span><strong>Depth:</strong> 5'10"</span>
-            <span><strong>Size:</strong> 14'x32'</span>
+            <span><strong data-i18n="depthLabel">Depth:</strong> 5'10"</span>
+            <span><strong data-i18n="sizeLabel">Size:</strong> 14'x32'</span>
             </div>
           </article>
         </div>
@@ -233,7 +242,7 @@
 
       <!-- CLASSIC MODELS -->
       <section class="services-list">
-        <h2>Classic Models</h2>
+        <h2 data-i18n="dolphinClassicTitle">Classic Models</h2>
 
         <div class="pool-grid">
 
@@ -242,10 +251,10 @@
             <img class="pool-image" src="./assets/images/dolphin/florencia.jpg" alt="Florencia Pool" />
             <img class="pool-model" src="./assets/images/dolphin/florencia-model.png" />
             <h3>Florencia</h3>
-            <p>Classic model with a sloping bottom.</p>
+            <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'</span>
-              <span><strong>Size:</strong> 14'x34'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x34'</span>
             </div>
           </article>
 
@@ -254,10 +263,10 @@
             <img class="pool-image" src="./assets/images/dolphin/hopewell.jpg" alt="Hopewell Pool" />
             <img class="pool-model" src="./assets/images/dolphin/hopewell-model.png" />
             <h3>Hopewell</h3>
-            <p>Classic model with a sloping bottom.</p>
+            <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'</span>
-              <span><strong>Size:</strong> 15'x35'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 15'x35'</span>
             </div>
           </article>
 
@@ -266,10 +275,10 @@
             <img class="pool-image" src="./assets/images/dolphin/leamy.jpg" alt="Leamy Pool" />
             <img class="pool-model" src="./assets/images/dolphin/leamy-model.png" />
             <h3>Leamy</h3>
-            <p>Classic model with a sloping bottom.</p>
+            <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 6'6"</span>
-              <span><strong>Size:</strong> 12'x29', 15'x34'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 6'6"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x29', 15'x34'</span>
             </div>
           </article>
 
@@ -278,10 +287,10 @@
             <img class="pool-image" src="./assets/images/dolphin/roseway.jpg" alt="Roseway Pool" />
             <img class="pool-model" src="./assets/images/dolphin/roseway-model.png" />
             <h3>Roseway</h3>
-            <p>Classic model with a sloping bottom.</p>
+            <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
             <div class="pool-specs">
-              <span><strong>Depth:</strong> 5'6"</span>
-              <span><strong>Size:</strong> 10'x24'</span>
+              <span><strong data-i18n="depthLabel">Depth:</strong> 5'6"</span>
+              <span><strong data-i18n="sizeLabel">Size:</strong> 10'x24'</span>
             </div>
           </article>
 
