@@ -872,6 +872,192 @@ h1 {
 .service-row.in-view:nth-child(11) .service-content { transition-delay: 550ms; }
 .service-row.in-view:nth-child(12) .service-content { transition-delay: 600ms; }
 
+/* Service card grids (excavation.html, landscaping.html) */
+.skella-services {
+  margin-top: 2.2rem;
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  background: #1e4a73bf;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.skella-services > h2 {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.skella-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.skella-services--dense .skella-services-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skella-service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.06);
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.skella-service-card:hover {
+  border-color: rgba(53, 198, 255, 0.45);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.skella-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.55rem;
+  flex-shrink: 0;
+  --icon-main: var(--primary);
+  --icon-accent: #7ee0ff;
+  --icon-fill: transparent;
+  background: rgba(53, 198, 255, 0.14);
+}
+
+.skella-service-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.skella-service-icon svg .icon-main {
+  stroke: var(--icon-main);
+  fill: none;
+}
+
+.skella-service-icon svg .icon-accent {
+  stroke: var(--icon-accent);
+  fill: var(--icon-fill);
+}
+
+.skella-service-icon.tone-amber {
+  --icon-main: #ffc46b;
+  --icon-accent: #ff8a4c;
+  --icon-fill: rgba(255, 138, 76, 0.22);
+  background: rgba(255, 138, 76, 0.16);
+}
+
+.skella-service-icon.tone-sky {
+  --icon-main: #5dd4ff;
+  --icon-accent: #35c6ff;
+  --icon-fill: rgba(53, 198, 255, 0.28);
+  background: rgba(53, 198, 255, 0.16);
+}
+
+.skella-service-icon.tone-blue {
+  --icon-main: #7eb8ff;
+  --icon-accent: #4d9fff;
+  --icon-fill: rgba(77, 159, 255, 0.2);
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.skella-service-icon.tone-gold {
+  --icon-main: #e8c56a;
+  --icon-accent: #f5b942;
+  --icon-fill: rgba(245, 185, 66, 0.22);
+  background: rgba(245, 185, 66, 0.14);
+}
+
+.skella-service-icon.tone-earth {
+  --icon-main: #8fd4a8;
+  --icon-accent: #5cbf7a;
+  --icon-fill: rgba(92, 191, 122, 0.22);
+  background: rgba(92, 191, 122, 0.14);
+}
+
+.skella-service-icon.tone-stone {
+  --icon-main: #a8bdd4;
+  --icon-accent: #c9a882;
+  --icon-fill: rgba(201, 168, 130, 0.25);
+  background: rgba(168, 189, 212, 0.14);
+}
+
+.skella-service-icon.tone-violet {
+  --icon-main: #c4a8ff;
+  --icon-accent: #9b7aff;
+  --icon-fill: rgba(155, 122, 255, 0.22);
+  background: rgba(155, 122, 255, 0.14);
+}
+
+.skella-service-icon.tone-slate {
+  --icon-main: #b8c5d6;
+  --icon-accent: #8fa3bc;
+  --icon-fill: rgba(143, 163, 188, 0.22);
+  background: rgba(143, 163, 188, 0.14);
+}
+
+.skella-service-icon.tone-ember {
+  --icon-main: #ff9f6b;
+  --icon-accent: #ff6b4a;
+  --icon-fill: rgba(255, 107, 74, 0.22);
+  background: rgba(255, 107, 74, 0.14);
+}
+
+.skella-service-icon.tone-wood {
+  --icon-main: #d4a574;
+  --icon-accent: #b8844f;
+  --icon-fill: rgba(184, 132, 79, 0.22);
+  background: rgba(184, 132, 79, 0.14);
+}
+
+.skella-service-icon.tone-leaf {
+  --icon-main: #7dd99a;
+  --icon-accent: #3db86a;
+  --icon-fill: rgba(61, 184, 106, 0.25);
+  background: rgba(61, 184, 106, 0.14);
+}
+
+.skella-service-icon.tone-teal {
+  --icon-main: #6ee7d8;
+  --icon-accent: #2ec4b6;
+  --icon-fill: rgba(46, 196, 182, 0.25);
+  background: rgba(46, 196, 182, 0.14);
+}
+
+.skella-service-card h3 {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.skella-service-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+@media (min-width: 900px) {
+  .skella-services--dense .skella-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skella-services-grid,
+  .skella-services--dense .skella-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pool-card {
   position: relative;
   display: flex;
