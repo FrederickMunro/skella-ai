@@ -6,7 +6,7 @@
     <title data-i18n="pageTitleQuote">Skella | Request a Quote</title>
     <meta
       name="description"
-      content="Skella request a quote for your project."
+      content="Request a quote from Skella for pool installation, landscaping, and excavation."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css"
+      media="screen"
+    />
   </head>
   <body>
     <div class="bg-gradient"></div>
@@ -22,16 +27,14 @@
       <a class="brand" href="./index.html" aria-label="Skella home">
         <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
       </a>
-    
+
       <div class="nav-wrapper">
-        <!-- HAMBURGER -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
-    
-        <!-- NAV -->
+
         <nav class="nav" id="mobile-nav">
           <ul class="nav-list">
             <li class="dropdown">
@@ -48,7 +51,7 @@
             <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
             <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
             <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
-    
+
             <li class="mobile-lang">
               <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
             </li>
@@ -62,7 +65,7 @@
         <p class="eyebrow" data-i18n="landscapingEyebrow">Skella Services</p>
         <h1 data-i18n="quoteTitle">Request a Quote</h1>
         <p data-i18n="quoteText">
-          Have a project in mind? Reach out and we’ll help you plan your perfect outdoor space.
+          Have a project in mind? Fill out the form below and we’ll help you plan your perfect outdoor space.
         </p>
 
         <div class="hero-cta">
@@ -70,52 +73,92 @@
         </div>
       </section>
 
-      <footer class="site-footer container">
-        <div class="partner-links">
-          <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
-          <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-            <img src="./assets/images/mova.svg" alt="Mova" />
-          </a>
-          <a href="https://www.azoria.ca/en/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/images/azoria.svg" alt="Azoria" />
-          </a>
-          <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/images/rinox.svg" alt="Skella Group" />
-          </a>
+      <section class="quote-embed-section" aria-label="Quote request form">
+        <div class="quote-embed-wrap">
+          <div id="cfdd2fae-d6ec-4286-9dab-e4f6aec31347-1970336"></div>
         </div>
-        <div class="social-links">
-          <span class="social-label" data-i18n="socialLabel">Follow us</span>
-          <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer"
-            ><svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
-              <circle cx="12" cy="12" r="4.2"></circle>
-              <circle cx="17.5" cy="6.5" r="1.1"></circle>
-            </svg>
-            <span>Instagram</span></a
-          >
+      </section>
+
+      <section class="finance-it-section" aria-labelledby="finance-it-heading">
+        <div class="finance-it-card">
+          <p class="finance-it-eyebrow" data-i18n="financeItEyebrow">Flexible payments</p>
+          <h2 id="finance-it-heading" class="finance-it-title" data-i18n="financeItTitle">Financing Available</h2>
+          <p class="finance-it-text" data-i18n="financeItText">
+            Spread the cost of your project with flexible payment plans through our financing partner.
+          </p>
           <a
-            href="https://www.facebook.com/profile.php?id=100064180712995"
+            id="finance-it-link"
+            class="finance-it-link"
+            href="https://www.financeit.ca/en/direct/payment-plan/YT0mZj0mbD0mcD0zQUtMUTVHSFZMeHdaaFU1Ml9EWkFBJnE9dHJ1ZSZzPTAmdD0mdj0x/apply"
+            data-i18n-href="financeItApplyUrl"
             target="_blank"
             rel="noopener noreferrer"
-            ><svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M14.4 8.2h2.2V5.1h-2.6c-3 0-4.5 1.8-4.5 4.7v2H7.3v3.1h2.2v5.8h3.2V15h2.6l.4-3.1h-3V10c0-1.1.4-1.8 1.7-1.8z"
-              ></path>
-            </svg>
-            <span>Facebook</span></a
           >
-          <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer"
-            ><svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M14.2 4.2c.7 1.5 1.8 2.4 3.2 2.9v2.7c-1.2-.1-2.3-.5-3.2-1.1v5.6c0 2.9-2.2 5.1-5.2 5.1-2.9 0-5-2.3-5-5 0-2.8 2.2-5 5.1-5 .3 0 .6 0 .9.1v2.8c-.3-.1-.6-.2-.9-.2-1.4 0-2.4 1.1-2.4 2.4s1 2.4 2.4 2.4c1.4 0 2.4-1.1 2.4-2.4V4.2h2.7z"
-              ></path>
-            </svg>
-            <span>TikTok</span></a
-          >
+            <img
+              src="https://pub-f40ae46f468a42d88289e08f9bb73df6.r2.dev/uploads/financeit-logo.svg"
+              alt="Financeit"
+              width="220"
+              height="48"
+              loading="lazy"
+              data-i18n-alt="financeItLogoAlt"
+            />
+            <span class="finance-it-cta" data-i18n="financeItCta">Apply for financing</span>
+          </a>
         </div>
-        <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
-      </footer>
+      </section>
+    </main>
 
+    <footer class="site-footer container">
+      <div class="partner-links">
+        <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
+        <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/mova.svg" alt="Mova" />
+        </a>
+        <a href="https://www.azoria.ca/en/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/azoria.svg" alt="Azoria" />
+        </a>
+        <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/rinox.svg" alt="Skella Group" />
+        </a>
+      </div>
+      <div class="social-links">
+        <span class="social-label" data-i18n="socialLabel">Follow us</span>
+        <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.5" cy="6.5" r="1.1"></circle>
+          </svg>
+          <span>Instagram</span></a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=100064180712995"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M14.4 8.2h2.2V5.1h-2.6c-3 0-4.5 1.8-4.5 4.7v2H7.3v3.1h2.2v5.8h3.2V15h2.6l.4-3.1h-3V10c0-1.1.4-1.8 1.7-1.8z"
+            ></path>
+          </svg>
+          <span>Facebook</span></a
+        >
+        <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M14.2 4.2c.7 1.5 1.8 2.4 3.2 2.9v2.7c-1.2-.1-2.3-.5-3.2-1.1v5.6c0 2.9-2.2 5.1-5.2 5.1-2.9 0-5-2.3-5-5 0-2.8 2.2-5 5.1-5 .3 0 .6 0 .9.1v2.8c-.3-.1-.6-.2-.9-.2-1.4 0-2.4 1.1-2.4 2.4s1 2.4 2.4 2.4c1.4 0 2.4-1.1 2.4-2.4V4.2h2.7z"
+            ></path>
+          </svg>
+          <span>TikTok</span></a
+        >
+      </div>
+      <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
+    </footer>
+
+    <script
+      src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
+      clienthub_id="cfdd2fae-d6ec-4286-9dab-e4f6aec31347-1970336"
+      form_url="https://clienthub.getjobber.com/client_hubs/cfdd2fae-d6ec-4286-9dab-e4f6aec31347/public/work_request/embedded_work_request_form?form_id=1970336"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>

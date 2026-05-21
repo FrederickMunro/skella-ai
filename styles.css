@@ -583,6 +583,10 @@ h1 {
   background-image: url("./assets/images/home-mova.webp");
 }
 
+.sub-hero.quote {
+  background-image: url("./assets/images/home-mova.webp");
+}
+
 .sub-hero h1 {
   margin: 0.35rem 0 0.8rem;
 }
@@ -1099,6 +1103,135 @@ h1 {
 
 .contact-form button {
   margin-top: 0.5rem;
+}
+
+.contact-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form-status {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.contact-form-status.is-success {
+  color: #8fe8b8;
+}
+
+.contact-form-status.is-error {
+  color: #ffb4b4;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* JOBBER QUOTE EMBED */
+
+.quote-embed-section {
+  margin-top: 2.5rem;
+  padding: 0 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-embed-wrap {
+  width: 100%;
+  max-width: 750px;
+  overflow: hidden;
+}
+
+.finance-it-section {
+  margin-top: 2.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.finance-it-card {
+  width: 100%;
+  max-width: 750px;
+  padding: 2rem 2rem 1.75rem;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #ffffff18 0%, #ffffff08 55%, #35c6ff12 100%);
+  box-shadow: 0 18px 40px #03101f33;
+  text-align: center;
+}
+
+.finance-it-eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.finance-it-title {
+  margin: 0 0 0.75rem;
+  font-family: Montserrat, Inter, sans-serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.finance-it-text {
+  margin: 0 auto 1.5rem;
+  max-width: 42ch;
+  color: var(--text-soft);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.finance-it-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.75rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid #ffffff22;
+  background: #ffffff10;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.finance-it-link:hover {
+  transform: translateY(-3px);
+  border-color: #35c6ff66;
+  background: #ffffff1a;
+  box-shadow: 0 12px 28px #35c6ff22;
+}
+
+.finance-it-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.finance-it-link img {
+  display: block;
+  width: min(220px, 70vw);
+  height: auto;
+}
+
+.finance-it-cta {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+
+.finance-it-link:hover .finance-it-cta {
+  color: #7ddfff;
 }
 
 /* NAVBAR */

@@ -105,6 +105,7 @@ const translations = {
     navExcavation: "Excavation",
     navGallery: "Gallery",
     navContact: "Contact",
+    navQuote: "Quote",
     menuAria: "Menu",
     pageTitleHome: "Skella | Pool Installation Experts",
     pageTitlePools: "Skella | Pool Services",
@@ -115,6 +116,18 @@ const translations = {
     pageTitleExcavation: "Skella | Excavation",
     pageTitleGallery: "Skella | Projects Gallery",
     pageTitleContact: "Skella | Contact",
+    pageTitleQuote: "Skella | Request a Quote",
+    quoteTitle: "Request a Quote",
+    quoteText:
+      "Have a project in mind? Fill out the form below and we’ll help you plan your perfect outdoor space.",
+    financeItEyebrow: "Flexible payments",
+    financeItTitle: "Financing Available",
+    financeItText:
+      "Spread the cost of your project with flexible payment plans through our financing partner.",
+    financeItCta: "Apply for financing",
+    financeItLogoAlt: "Financeit logo",
+    financeItApplyUrl:
+      "https://www.financeit.ca/en/direct/payment-plan/YT0mZj0mbD0mcD0zQUtMUTVHSFZMeHdaaFU1Ml9EWkFBJnE9dHJ1ZSZzPTAmdD0mdj0x/apply",
     collectionCta: "Request a Quote",
     depthLabel: "Depth:",
     sizeLabel: "Size:",
@@ -185,6 +198,9 @@ const translations = {
     contactPhonePlaceholder: "Phone Number",
     contactMessagePlaceholder: "Tell us about your project...",
     contactSubmit: "Send Message",
+    contactSending: "Sending...",
+    contactFormSuccess: "Thanks! Your message was sent. We’ll get back to you soon.",
+    contactFormError: "Something went wrong. Please try again or email us at info@skella.ca.",
     galleryEyebrow: "Our Work",
     galleryTitle: "Project Gallery",
     galleryText: "Real transformations. From raw backyards to fully finished outdoor living spaces.",
@@ -390,6 +406,7 @@ const translations = {
     navExcavation: "Excavation",
     navGallery: "Galerie",
     navContact: "Contact",
+    navQuote: "Soumission",
     menuAria: "Menu",
     pageTitleHome: "Skella | Experts en installation de piscines",
     pageTitlePools: "Skella | Services de piscine",
@@ -400,6 +417,18 @@ const translations = {
     pageTitleExcavation: "Skella | Excavation",
     pageTitleGallery: "Skella | Galerie de projets",
     pageTitleContact: "Skella | Contact",
+    pageTitleQuote: "Skella | Demander une soumission",
+    quoteTitle: "Demander une soumission",
+    quoteText:
+      "Un projet en tête? Remplissez le formulaire ci-dessous et nous vous aiderons à planifier l’espace extérieur idéal.",
+    financeItEyebrow: "Paiements flexibles",
+    financeItTitle: "Financement disponible",
+    financeItText:
+      "Étalez le coût de votre projet grâce à des plans de paiement flexibles avec notre partenaire de financement.",
+    financeItCta: "Demander un financement",
+    financeItLogoAlt: "Logo Financeit",
+    financeItApplyUrl:
+      "https://www.financeit.ca/fr/direct/payment-plan/YT0mZj0mbD0mcD0zQUtMUTVHSFZMeHdaaFU1Ml9EWkFBJnE9dHJ1ZSZzPTAmdD0mdj0x/apply",
     collectionCta: "Obtenir une soumission",
     depthLabel: "Profondeur :",
     sizeLabel: "Dimension :",
@@ -470,6 +499,9 @@ const translations = {
     contactPhonePlaceholder: "Numéro de téléphone",
     contactMessagePlaceholder: "Parlez-nous de votre projet...",
     contactSubmit: "Envoyer le message",
+    contactSending: "Envoi en cours...",
+    contactFormSuccess: "Merci! Votre message a été envoyé. Nous vous répondrons bientôt.",
+    contactFormError: "Une erreur s’est produite. Réessayez ou écrivez-nous à info@skella.ca.",
     galleryEyebrow: "Nos réalisations",
     galleryTitle: "Galerie de projets",
     galleryText: "De vraies transformations — de la cour brute à l’espace extérieur entièrement fini.",
@@ -593,8 +625,36 @@ function applyLanguage(language) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-href]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-href");
+    if (table[key]) {
+      node.setAttribute("href", table[key]);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-alt");
+    if (table[key]) {
+      node.setAttribute("alt", table[key]);
+    }
+  });
+
   document.documentElement.lang = language;
   localStorage.setItem("skella_language", language);
+
+  const contactStatus = document.getElementById("contact-form-status");
+  if (contactStatus && !contactStatus.hidden) {
+    if (contactStatus.classList.contains("is-success")) {
+      contactStatus.textContent = table.contactFormSuccess || "";
+    } else if (contactStatus.classList.contains("is-error")) {
+      contactStatus.textContent = table.contactFormError || "";
+    }
+  }
+
+  const contactSubmit = document.querySelector("#contact-form button[type='submit']");
+  if (contactSubmit && !contactSubmit.disabled) {
+    contactSubmit.textContent = table.contactSubmit || contactSubmit.textContent;
+  }
 }
 
 function toggleLanguage() {
@@ -781,3 +841,59 @@ function initBackToTop() {
 }
 
 initBackToTop();
+
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("contact-form-status");
+  if (!form || !statusEl) return;
+
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  function setStatus(type, messageKey) {
+    const message = translations[currentLanguage]?.[messageKey] || "";
+    statusEl.textContent = message;
+    statusEl.hidden = !message;
+    statusEl.classList.remove("is-success", "is-error");
+    if (type) statusEl.classList.add(type === "success" ? "is-success" : "is-error");
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const honey = form.querySelector('input[name="_honey"]');
+    if (honey?.value) return;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+    const defaultSubmitText = submitBtn.textContent;
+
+    submitBtn.disabled = true;
+    statusEl.hidden = true;
+    statusEl.classList.remove("is-success", "is-error");
+    submitBtn.textContent = translations[currentLanguage]?.contactSending || "Sending...";
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/info@skella.ca", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) throw new Error("Form submit failed");
+
+      form.reset();
+      setStatus("success", "contactFormSuccess");
+    } catch {
+      setStatus("error", "contactFormError");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = translations[currentLanguage]?.contactSubmit || defaultSubmitText;
+    }
+  });
+}
+
+initContactForm();

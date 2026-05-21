@@ -134,13 +134,51 @@
 
             <h2 data-i18n="contactFormTitle">Send a Message</h2>
 
-            <form class="contact-form">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formsubmit.co/freddorando@gmail.com"
+              method="POST"
+              novalidate
+            >
+              <input type="text" name="_honey" class="contact-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <input type="hidden" name="_subject" value="New message from skella.ca contact form" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
 
-              <input type="text" data-i18n-placeholder="contactNamePlaceholder" placeholder="Your Name" required />
-              <input type="email" data-i18n-placeholder="contactEmailPlaceholder" placeholder="Email Address" required />
-              <input type="tel" data-i18n-placeholder="contactPhonePlaceholder" placeholder="Phone Number" />
+              <input
+                type="text"
+                name="name"
+                data-i18n-placeholder="contactNamePlaceholder"
+                placeholder="Your Name"
+                required
+                autocomplete="name"
+              />
+              <input
+                type="email"
+                name="email"
+                data-i18n-placeholder="contactEmailPlaceholder"
+                placeholder="Email Address"
+                required
+                autocomplete="email"
+              />
+              <input
+                type="tel"
+                name="phone"
+                data-i18n-placeholder="contactPhonePlaceholder"
+                placeholder="Phone Number"
+                autocomplete="tel"
+              />
 
-              <textarea rows="5" data-i18n-placeholder="contactMessagePlaceholder" placeholder="Tell us about your project..."></textarea>
+              <textarea
+                name="message"
+                rows="5"
+                data-i18n-placeholder="contactMessagePlaceholder"
+                placeholder="Tell us about your project..."
+                required
+              ></textarea>
+
+              <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite" hidden></p>
 
               <button type="submit" class="btn btn-primary" data-i18n="contactSubmit">
                 Send Message
