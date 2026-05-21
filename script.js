@@ -117,6 +117,26 @@ const translations = {
     pageTitleGallery: "Skella | Projects Gallery",
     pageTitleContact: "Skella | Contact",
     pageTitleQuote: "Skella | Request a Quote",
+    metaDescHome:
+      "Discover Skella — fiberglass in-ground pools and premium landscaping in Montreal. Turnkey design and installation. Request a personalized quote.",
+    metaDescPools:
+      "Explore Skella pool design, colors, and fiberglass collections for your backyard project in Montreal and surrounding areas.",
+    metaDescAquarino:
+      "Browse the Aquarino fiberglass pool collection from Skella — premium models, sizes, and turnkey installation.",
+    metaDescDolphin:
+      "Browse the Dolphin fiberglass pool collection from Skella — shapes and models for every backyard.",
+    metaDescMova:
+      "Browse the Mova fiberglass pool collection from Skella — compact to full-size swim models.",
+    metaDescLandscaping:
+      "Skella landscaping services — hardscape, planting, and outdoor finishing to complete your pool project.",
+    metaDescExcavation:
+      "Skella excavation services — site prep, grading, and pool digs done with precision in Quebec.",
+    metaDescGallery:
+      "See Skella pool and backyard transformation projects — before and after installations.",
+    metaDescContact:
+      "Contact Skella for pool installation, landscaping, and excavation — phone, email, and message form.",
+    metaDescQuote:
+      "Request a quote from Skella — online work request form and financing options for your outdoor project.",
     quoteTitle: "Request a Quote",
     quoteText:
       "Have a project in mind? Fill out the form below and we’ll help you plan your perfect outdoor space.",
@@ -418,6 +438,26 @@ const translations = {
     pageTitleGallery: "Skella | Galerie de projets",
     pageTitleContact: "Skella | Contact",
     pageTitleQuote: "Skella | Demander une soumission",
+    metaDescHome:
+      "Découvrez Skella, votre expert en piscines creusées en fibre de verre et aménagements paysagers haut de gamme à Montréal. Service clé en main, de la conception à l'installation. Devis personnalisé.",
+    metaDescPools:
+      "Découvrez les piscines Skella — couleurs, collections en fibre de verre et installation clé en main à Montréal.",
+    metaDescAquarino:
+      "Collection Aquarino — piscines en fibre de verre Skella, modèles, dimensions et installation.",
+    metaDescDolphin:
+      "Collection Dolphin — piscines en fibre de verre Skella, formes et modèles pour votre cour.",
+    metaDescMova:
+      "Collection Mova — piscines en fibre de verre Skella, du compact au couloir de nage.",
+    metaDescLandscaping:
+      "Aménagement paysager Skella — pavé, plantation et finitions pour compléter votre piscine.",
+    metaDescExcavation:
+      "Excavation Skella — préparation de terrain et creusage de piscines au Québec.",
+    metaDescGallery:
+      "Galerie de projets Skella — transformations de cours et installations de piscines.",
+    metaDescContact:
+      "Contactez Skella — piscines, aménagement et excavation. Téléphone, courriel et formulaire.",
+    metaDescQuote:
+      "Demandez une soumission Skella — formulaire en ligne et financement pour votre projet.",
     quoteTitle: "Demander une soumission",
     quoteText:
       "Un projet en tête? Remplissez le formulaire ci-dessous et nous vous aiderons à planifier l’espace extérieur idéal.",
@@ -636,6 +676,13 @@ function applyLanguage(language) {
     const key = node.getAttribute("data-i18n-alt");
     if (table[key]) {
       node.setAttribute("alt", table[key]);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-content]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-content");
+    if (table[key]) {
+      node.setAttribute("content", table[key]);
     }
   });
 
