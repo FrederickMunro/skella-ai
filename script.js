@@ -22,7 +22,6 @@ const translations = {
     service3Title: "Landscaping",
     service3Text:
       "Complete outdoor finishing to create a polished backyard experience.",
-    excavationEyebrow: "Skella Services",
     excavationTitle: "Excavation Services",
     excavationText:
       "Our team delivers precise and efficient excavation for pool installations, landscape redesigns, and full backyard transformations.",
@@ -323,6 +322,10 @@ const translations = {
     poolDescSlopedPlay: "Sloped bottom ideal for swimming and play.",
     lightboxClose: "Close",
     backToTopAria: "Back to top",
+    cookieTitle: "We value your privacy",
+    cookieText: "We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.",
+    cookieAccept: "Accept",
+    cookieReject: "Reject",
   },
 
   fr: {
@@ -438,7 +441,7 @@ const translations = {
     navAquarino: "Collection Aquarino",
     navDolphin: "Collection Dolphin",
     navMova: "Collection Mova",
-    navLandscaping: "Aménagement paysager",
+    navLandscaping: "Aménagement",
     navExcavation: "Excavation",
     navGallery: "Galerie",
     navContact: "Contact",
@@ -651,6 +654,10 @@ const translations = {
     poolDescSlopedPlay: "Fond incliné idéal pour la nage et le jeu.",
     lightboxClose: "Fermer",
     backToTopAria: "Retour en haut",
+    cookieTitle: "Nous respectons votre vie privée",
+    cookieText: "Nous utilisons des cookies pour améliorer les performances du site, comprendre l'utilisation et enrichir votre expérience de navigation. Vous pouvez accepter ou refuser les cookies non essentiels.",
+    cookieAccept: "Accepter",
+    cookieReject: "Refuser",
   }
 };
 
