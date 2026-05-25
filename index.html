@@ -7,7 +7,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="./assets/images/skella-tab-logo.png"
+      href="/assets/images/skella-tab-logo.png"
     />
     <meta name="google-site-verification" content="ORkgyvgge72j43oTx0n0FPQrHcGXcMCoUFK8zuSaFUI" />
     <meta name="google-site-verification" content="-YydiCsZ_0DliHPY3Ua-AnPwesjxbLO0BPcpd2tkpJQ" />
@@ -33,7 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -47,8 +47,8 @@
   <body>
     <div class="bg-gradient"></div>
     <header class="site-header container">
-      <a class="brand" href="./index.html" aria-label="Skella home">
-        <img class="brand-logo" src="./assets/images/skella-logo.png" alt="Skella logo" />
+      <a class="brand" href="/" aria-label="Skella home">
+        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella logo" />
       </a>
     
       <div class="nav-wrapper">
@@ -65,17 +65,17 @@
             <li class="dropdown">
               <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
               <ul class="dropdown-menu">
-                <li><a href="./pools.html" data-i18n="navColors">Colors</a></li>
-                <li><a href="./aquarino.html" data-i18n="navAquarino">Aquarino Collection</a></li>
-                <li><a href="./dolphin.html" data-i18n="navDolphin">Dolphin Collection</a></li>
-                <li><a href="./mova.html" data-i18n="navMova">Mova Collection</a></li>
+                <li><a href="/pools/" data-i18n="navColors">Colors</a></li>
+                <li><a href="/pools/aquarino/" data-i18n="navAquarino">Aquarino Collection</a></li>
+                <li><a href="/pools/dolphin/" data-i18n="navDolphin">Dolphin Collection</a></li>
+                <li><a href="/pools/mova/" data-i18n="navMova">Mova Collection</a></li>
               </ul>
             </li>
-            <li><a href="./landscaping.html" data-i18n="navLandscaping">Landscaping</a></li>
-            <li><a href="./excavation.html" data-i18n="navExcavation">Excavation</a></li>
-            <li><a href="./gallery.html" data-i18n="navGallery">Gallery</a></li>
-            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
-            <li><a href="./quote.html" data-i18n="navQuote">Quote</a></li>
+            <li><a href="/landscaping/" data-i18n="navLandscaping">Landscaping</a></li>
+            <li><a href="/excavation/" data-i18n="navExcavation">Excavation</a></li>
+            <li><a href="/gallery/" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="/contact/" data-i18n="navContact">Contact</a></li>
+            <li><a href="/quote/" data-i18n="navQuote">Quote</a></li>
     
             <li class="mobile-lang">
               <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
@@ -97,7 +97,7 @@
             places where families gather, unwind, and create memories.
           </p>
           <div class="hero-cta">
-            <a href="./quote.html" class="btn btn-primary" data-i18n="primaryCta">Get a Free Quote</a>
+            <a href="/quote/" class="btn btn-primary" data-i18n="primaryCta">Get a Free Quote</a>
           </div>
           <div class="stats">
             <article>
@@ -125,7 +125,7 @@
             preload="metadata"
             aria-label="Skella pool installation showcase video"
           >
-            <source src="./assets/videos/landing-page-video.mp4" type="video/mp4" />
+            <source src="/assets/videos/landing-page-video.mp4" type="video/mp4" />
           </video>
           <div class="hero-card-overlay"></div>
           <p data-i18n="cardTitle">Turnkey Installation</p>
@@ -136,13 +136,13 @@
       <section id="services" class="services container">
         <h2 data-i18n="servicesTitle">Our Core Services</h2>
         <div class="grid">
-          <a href="./pools.html" class="service-card service-pools service-link">
+          <a href="/pools/" class="service-card service-pools service-link">
             <h3 data-i18n="service1Title">Pools</h3>
           </a>
-          <a href="./excavation.html" class="service-card service-excavation service-link">
+          <a href="/excavation/" class="service-card service-excavation service-link">
             <h3 data-i18n="service2Title">Excavation</h3>
           </a>
-          <a href="./landscaping.html" class="service-card service-landscaping service-link">
+          <a href="/landscaping/" class="service-card service-landscaping service-link">
             <h3 data-i18n="service3Title">Landscaping</h3>
           </a>
         </div>
@@ -158,24 +158,26 @@
         <ol class="process-steps">
           <li class="process-step">
             <span class="process-step-num" aria-hidden="true">1</span>
-            <h3 data-i18n="process1Title">Consult</h3>
-            <p data-i18n="process1Text">
-              Share your vision. We visit your property, review the layout, and answer your questions.
-            </p>
+            <div class="process-step-content">
+              <h3>Consult</h3>
+              <p>Share your vision. We visit your property, review the layout, and answer your questions.</p>
+            </div>
           </li>
+        
           <li class="process-step">
             <span class="process-step-num" aria-hidden="true">2</span>
-            <h3 data-i18n="process2Title">Plan</h3>
-            <p data-i18n="process2Text">
-              Pool model, timeline, and a detailed quote — so you know exactly what to expect.
-            </p>
+            <div class="process-step-content">
+              <h3>Plan</h3>
+              <p>Pool model, timeline, and a detailed quote — so you know exactly what to expect.</p>
+            </div>
           </li>
+        
           <li class="process-step">
             <span class="process-step-num" aria-hidden="true">3</span>
-            <h3 data-i18n="process3Title">Build</h3>
-            <p data-i18n="process3Text">
-              Excavation, installation, landscaping, and a final walkthrough before you dive in.
-            </p>
+            <div class="process-step-content">
+              <h3>Build</h3>
+              <p>Excavation, installation, landscaping, and a final walkthrough before you dive in.</p>
+            </div>
           </li>
         </ol>
       </section>
@@ -214,7 +216,7 @@
       <section id="contact" class="cta container">
         <h2 data-i18n="ctaTitle">Ready to build your pool?</h2>
         <p data-i18n="ctaText">Let us bring your project to life with quality and care.</p>
-        <a class="btn btn-primary-bottom" href="./contact.html" data-i18n="ctaButton"
+        <a class="btn btn-primary-bottom" href="/contact/" data-i18n="ctaButton"
           >Contact Skella</a>
       </section>
     </main>
@@ -223,13 +225,22 @@
       <div class="partner-links">
         <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="./assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/rinox.svg" alt="Skella Group" />
+          <img src="/assets/images/rinox.svg" alt="Rinox" />
+        </a>
+        <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+        </a>
+        <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+        </a>
+        <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
         </a>
       </div>
       <div class="social-links">
@@ -265,6 +276,6 @@
       <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
