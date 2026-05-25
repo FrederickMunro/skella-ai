@@ -34,17 +34,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-16871341515");
-    </script>
   </head>
   <body>
+    <!-- Cookie Icon (FAB) -->
+    <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
+      <img src="/assets/images/cookie.svg" alt="Cookies" />
+    </button>
+
+    <!-- Cookie Panel -->
+    <div id="cookie-panel" class="cookie-panel">
+      <h3>We value your privacy</h4>
+      <p>We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.</p>
+      <div class="cookie-buttons">
+        <button id="accept-cookies">Accept</button>
+        <button id="reject-cookies">Reject</button>
+      </div>
+    </div>
     <div class="bg-gradient"></div>
     <header class="site-header container">
       <a class="brand" href="/" aria-label="Skella home">

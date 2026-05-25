@@ -701,6 +701,7 @@ h1 {
   border: 1px solid var(--line);
   max-width: 260px;
   margin: 0 auto;
+  cursor: ns-resize;
 }
 
 .compare-vertical img {
@@ -714,6 +715,211 @@ h1 {
 
 .img-top {
   clip-path: inset(50% 0 0 0);
+}
+
+/* =========================
+   COOKIE ICON (FAB)
+========================= */
+.cookie-fab {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10000;
+
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(17, 48, 80, 0.88);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.cookie-fab:hover {
+  transform: translateY(-2px);
+}
+
+.cookie-fab img {
+  width: 22px;
+  height: 22px;
+}
+
+/* hidden state for icon */
+.cookie-fab.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.85);
+}
+
+
+/* =========================
+   COOKIE PANEL (MODERN CARD)
+========================= */
+.cookie-panel {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10001;
+
+  width: 340px;
+
+  background: rgba(18, 38, 60, 0.94);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  color: var(--text);
+
+  transform-origin: bottom left;
+
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  pointer-events: none;
+
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+/* open state */
+.cookie-panel.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+
+/* little arrow */
+.cookie-panel::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 22px;
+
+  width: 10px;
+  height: 10px;
+
+  background: rgba(18, 38, 60, 0.94);
+  transform: rotate(45deg);
+
+  border-left: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+
+/* =========================
+   TEXT
+========================= */
+.cookie-panel p {
+  margin: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  letter-spacing: 0.1px;
+  margin-bottom: 0.5rem;
+}
+
+.cookie-panel h3 {
+  margin: 0;
+
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.cookie-buttons button {
+  flex: 1;
+
+  padding: 10px 12px;
+
+  border-radius: 8px; /* 🔥 less rounded = more professional */
+
+  font-weight: 600;
+  font-size: 0.82rem;
+
+  cursor: pointer;
+
+  letter-spacing: 0.2px;
+
+  transition: transform 120ms ease, background 120ms ease, border 120ms ease;
+}
+
+/* PRIMARY */
+#accept-cookies {
+  background: #2f6df6;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#accept-cookies:hover {
+  background: #2a63e0;
+}
+
+/* SECONDARY */
+#reject-cookies {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.85);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#reject-cookies:hover {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================
+   SETTINGS LINK
+========================= */
+.cookie-link {
+  background: none;
+  border: none;
+
+  color: rgba(255,255,255,0.7);
+  font-size: 0.78rem;
+
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+
+  transition: color 120ms ease;
+}
+
+.cookie-link:hover {
+  color: white;
 }
 
 .slider-handle {
@@ -908,7 +1114,6 @@ h1 {
   opacity: 1;
 }
 
-/* optional: stagger effect */
 .service-row.in-view:nth-child(1) .service-content { transition-delay: 50ms; }
 .service-row.in-view:nth-child(2) .service-content { transition-delay: 100ms; }
 .service-row.in-view:nth-child(3) .service-content { transition-delay: 150ms; }
@@ -922,7 +1127,6 @@ h1 {
 .service-row.in-view:nth-child(11) .service-content { transition-delay: 550ms; }
 .service-row.in-view:nth-child(12) .service-content { transition-delay: 600ms; }
 
-/* Service card grids (excavation.html, landscaping.html) */
 .skella-services {
   margin-top: 2.2rem;
   border: 1px solid var(--line);
@@ -1499,6 +1703,27 @@ h1 {
 .nav-list a:hover,
 .dropdown-toggle:hover {
   background: #ffffff14;
+}
+
+.cta.container {
+  position: relative;
+  background-image: url("./assets/images/pools-title.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.cta.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* Adjust darkness here */
+  z-index: 1;
+}
+
+.cta.container > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* DROPDOWN */

@@ -157,18 +157,24 @@
           <div class="contact-card">
 
             <h2 data-i18n="contactFormTitle">Send a Message</h2>
-
             <form
               id="contact-form"
               class="contact-form"
-              action="https://formsubmit.co/info@skella.ca"
+              name="contact"
               method="POST"
-              novalidate
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
-              <input type="text" name="_honey" class="contact-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
-              <input type="hidden" name="_subject" value="New message from skella.ca contact form" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
+              <!-- Required for Netlify -->
+              <input type="hidden" name="form-name" value="contact" />
+
+              <!-- Spam protection -->
+              <p hidden>
+                <label>
+                  Don't fill this out:
+                  <input name="bot-field" />
+                </label>
+              </p>
 
               <input
                 type="text"
@@ -178,6 +184,7 @@
                 required
                 autocomplete="name"
               />
+
               <input
                 type="email"
                 name="email"
@@ -186,6 +193,7 @@
                 required
                 autocomplete="email"
               />
+
               <input
                 type="tel"
                 name="phone"
@@ -202,20 +210,18 @@
                 required
               ></textarea>
 
-              <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite" hidden></p>
-
-              <button type="submit" class="btn btn-primary" data-i18n="contactSubmit">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-i18n="contactSubmit"
+              >
                 Send Message
               </button>
-
+              <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite" hidden></p>
             </form>
-
           </div>
-
         </div>
-
       </section>
-
     </main>
 
     <!-- FOOTER -->

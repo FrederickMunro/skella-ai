@@ -199,18 +199,18 @@ const translations = {
     svcGradingDesc: "Precise grading for drainage, stability, and preparation of construction sites.",
     svcRetainingTitle: "Retaining Wall",
     svcRetainingDesc: "Structural walls to stabilize slopes and improve usable outdoor space.",
-    aquarinoEyebrow: "Aquarino Collection",
-    aquarinoHeroTitle: "Pool Designs",
+    aquarinoEyebrow: "Pool Designs",
+    aquarinoHeroTitle: "Aquarino Collection",
     aquarinoHeroText: "Discover premium Aquarino pool models installed by Skella. Designed for elegance, durability, and modern outdoor living.",
     modelsTitle: "Available Pool Models",
-    dolphinEyebrow: "Dolphin Collection",
-    dolphinHeroTitle: "Pool Designs",
+    dolphinEyebrow: "Pool Designs",
+    dolphinHeroTitle: "Dolphin Collection",
     dolphinHeroText: "Explore Dolphin fiberglass pool models installed by Skella. Built for durability, comfort, and modern outdoor living.",
     dolphinRectTitle: "Rectangular Models",
     dolphinFreeformTitle: "Freeform Models",
     dolphinClassicTitle: "Oval Models",
-    movaEyebrow: "Mova Collection",
-    movaHeroTitle: "Modern Pool Designs",
+    movaEyebrow: "Pool Designs",
+    movaHeroTitle: "Mova Collection",
     movaHeroText: "Explore the Mova collection of fiberglass pools — designed for comfort, performance, and elegant outdoor living.",
     movaSectionSub: "From compact spa-style pools to full-length swim lanes.",
     contactEyebrow: "Get in Touch",
@@ -528,18 +528,18 @@ const translations = {
     svcGradingDesc: "Nivellement précis pour drainage, stabilité et préparation des chantiers.",
     svcRetainingTitle: "Mur de soutènement",
     svcRetainingDesc: "Murs structuraux pour stabiliser les pentes et agrandir l’espace utilisable.",
-    aquarinoEyebrow: "Collection Aquarino",
-    aquarinoHeroTitle: "Modèles de piscines",
+    aquarinoEyebrow: "Modèles de piscines",
+    aquarinoHeroTitle: "Collection Aquarino",
     aquarinoHeroText: "Découvrez les modèles Aquarino installés par Skella — élégance, durabilité et vie extérieure moderne.",
-    modelsTitle: "Modèles de piscines disponibles",
-    dolphinEyebrow: "Collection Dolphin",
-    dolphinHeroTitle: "Modèles de piscines",
+    modelsTitle: "Modèles de piscines",
+    dolphinEyebrow: "Modèles de piscines",
+    dolphinHeroTitle: "Collection Dolphin",
     dolphinHeroText: "Explorez les piscines en fibre de verre Dolphin installées par Skella — durabilité, confort et vie extérieure moderne.",
     dolphinRectTitle: "Modèles rectangulaires",
     dolphinFreeformTitle: "Modèles formes libres",
     dolphinClassicTitle: "Modèles ovales",
-    movaEyebrow: "Collection Mova",
-    movaHeroTitle: "Modèles de piscines modernes",
+    movaEyebrow: "Modèles de piscines",
+    movaHeroTitle: "Collection Mova",
     movaHeroText: "Explorez la collection Mova — conçue pour le confort, la performance et une vie extérieure élégante.",
     movaSectionSub: "Des piscines compactes aux couloirs de nage complets.",
     contactEyebrow: "Contactez-nous",
@@ -816,6 +816,7 @@ const serviceObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("in-view");
+        serviceObserver.unobserve(entry.target);
       }
     });
   },
@@ -847,6 +848,9 @@ function initLightbox() {
     lightboxImg.alt = img.alt || "";
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
+    window.addEventListener("beforeunload", () => {
+      document.body.style.overflow = "";
+    });
   };
 
   const closeLightbox = () => {
@@ -881,7 +885,8 @@ function initBackToTop() {
   btn.type = "button";
   btn.className = "back-to-top";
   btn.setAttribute("data-i18n-aria", "backToTopAria");
-  btn.setAttribute("aria-label", translations[currentLanguage]?.backToTopAria || "Back to top");
+  const label = window.translations?.[window.currentLanguage]?.backToTopAria || "Back to top";
+  btn.setAttribute("aria-label", label);
   btn.innerHTML =
     '<svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
     '<polyline points="7 15 12 10 17 15" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>' +
@@ -940,10 +945,12 @@ function initContactForm() {
     submitBtn.textContent = translations[currentLanguage]?.contactSending || "Sending...";
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/info@skella.ca", {
+      const response = await fetch("/", {
         method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData).toString(),
       });
 
       if (!response.ok) throw new Error("Form submit failed");
@@ -957,6 +964,117 @@ function initContactForm() {
       submitBtn.textContent = translations[currentLanguage]?.contactSubmit || defaultSubmitText;
     }
   });
+
+  const phoneInput = document.querySelector('input[name="phone"]');
+
+  if (phoneInput) {
+    phoneInput.addEventListener("input", (e) => {
+      let value = e.target.value.replace(/\D/g, ""); // remove all non-numbers
+
+      // limit to 10 digits (standard NA format)
+      value = value.slice(0, 10);
+
+      let formatted = value;
+
+      if (value.length > 6) {
+        formatted = `${value.slice(0, 3)}-${value.slice(3, 6)}-${value.slice(6)}`;
+      } else if (value.length > 3) {
+        formatted = `${value.slice(0, 3)}-${value.slice(3)}`;
+      }
+
+      e.target.value = formatted;
+    });
+  }
 }
 
 initContactForm();
+
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+  document.cookie = `${name}=${value}; expires=${d.toUTCString()}; path=/; SameSite=Lax`;
+}
+
+function getCookie(name) {
+  const cookies = document.cookie.split("; ");
+  for (let c of cookies) {
+    const [key, value] = c.split("=");
+    if (key === name) return value;
+  }
+  return null;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const icon = document.getElementById("cookie-fab");
+  const panel = document.getElementById("cookie-panel");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const rejectBtn = document.getElementById("reject-cookies");
+
+  if (!icon || !panel || !acceptBtn || !rejectBtn) return;
+
+  const consent = getCookie("cookieConsent");
+
+  function openPanel() {
+    panel.classList.add("open");
+    icon.classList.add("hidden");
+  }
+
+  function closePanel() {
+    panel.classList.remove("open");
+    icon.classList.remove("hidden");
+  }
+
+  // CLICK MUST ALWAYS WORK
+  icon.addEventListener("click", () => {
+    openPanel();
+  });
+
+  acceptBtn.addEventListener("click", () => {
+    setCookie("cookieConsent", "accepted", 180);
+    enableTracking();
+    closePanel();
+  });
+
+  rejectBtn.addEventListener("click", () => {
+    setCookie("cookieConsent", "rejected", 180);
+    closePanel();
+    location.reload();
+  });
+
+  // INITIAL STATE
+  if (consent === "accepted") {
+    enableTracking();
+    closePanel();
+    return;
+  }
+
+  if (consent === "rejected") {
+    closePanel();
+    return;
+  }
+
+  // FIRST VISIT → show panel
+  openPanel();
+});
+
+function enableTracking() {
+  if (window.__gaLoaded) return;
+  window.__gaLoaded = true;
+
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16871341515";
+  script.async = true;
+
+  script.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", "AW-16871341515");
+  };
+
+  document.head.appendChild(script);
+}
