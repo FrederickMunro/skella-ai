@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://skella.ca/quote" />
+    <link rel="canonical" href="https://skella.ca/en/quote" />
     <link
       rel="icon"
       type="image/png"
@@ -12,57 +12,62 @@
     <meta name="google-site-verification" content="ORkgyvgge72j43oTx0n0FPQrHcGXcMCoUFK8zuSaFUI" />
     <meta name="google-site-verification" content="-YydiCsZ_0DliHPY3Ua-AnPwesjxbLO0BPcpd2tkpJQ" />
     <meta name="theme-color" content="#113050" />
-    <title data-i18n="pageTitleQuote">Skella | Request a Quote</title>
+    <title>Skella | Request a Quote</title>
     <meta
       name="description"
-      data-i18n-content="metaDescQuote"
       content="Request a quote from Skella — online work request form and financing options for your outdoor project."
     />
     <meta property="og:site_name" content="Groupe Skella" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://skella.ca/quote" />
-    <meta property="og:title" data-i18n-content="pageTitleQuote" content="Skella | Request a Quote" />
-    <meta property="og:description" data-i18n-content="metaDescQuote" content="Request a quote from Skella — online work request form and financing options for your outdoor project." />
+    <meta property="og:url" content="https://skella.ca/en/quote" />
+    <meta property="og:title" content="Skella | Request a Quote" />
+    <meta property="og:description" content="Request a quote from Skella — online work request form and financing options for your outdoor project." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- SEO: Geo targeting -->
+    <meta name="geo.region" content="CA-QC" />
+    <meta name="geo.placename" content="Montreal" />
+
+    <!-- SEO: Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://skella.ca/en/quote/" />
+    <link rel="alternate" hreflang="fr" href="https://skella.ca/fr/quote/" />
+    <link rel="alternate" hreflang="x-default" href="https://skella.ca/en/quote/" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css"
       media="screen"
     />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-16871341515");
-    </script>
   </head>
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
       <img src="/assets/images/cookie.svg" alt="Cookies" />
     </button>
+
     <div id="cookie-panel" class="cookie-panel">
-      <h3 data-i18n="cookieTitle">We value your privacy</h4>
-      <p data-i18n="cookieText">We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.</p>
+      <h3>We value your privacy</h3>
+      <p>
+        We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.
+      </p>
       <div class="cookie-buttons">
-        <button data-i18n="cookieAccept" id="accept-cookies">Accept</button>
-        <button data-i18n="cookieReject" id="reject-cookies">Reject</button>
+        <button id="accept-cookies">Accept</button>
+        <button id="reject-cookies">Reject</button>
       </div>
     </div>
+
     <div class="bg-gradient"></div>
+
     <header class="site-header container">
-      <a class="brand" href="../" aria-label="Skella home">
-        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella logo" />
+      <a class="brand" href="/en/" aria-label="Skella home">
+        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella" />
       </a>
 
       <div class="nav-wrapper">
@@ -75,22 +80,22 @@
         <nav class="nav" id="mobile-nav">
           <ul class="nav-list">
             <li class="dropdown">
-              <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+              <button class="dropdown-toggle">Pools ▾</button>
               <ul class="dropdown-menu">
-                <li><a href="../pools/" data-i18n="navColors">Colors</a></li>
-                <li><a href="../pools/aquarino/" data-i18n="navAquarino">Aquarino Collection</a></li>
-                <li><a href="../pools/dolphin/" data-i18n="navDolphin">Dolphin Collection</a></li>
-                <li><a href="../pools/mova/" data-i18n="navMova">Mova Collection</a></li>
+                <li><a href="/en/pools/">Colors</a></li>
+                <li><a href="/en/pools/aquarino/">Aquarino Collection</a></li>
+                <li><a href="/en/pools/dolphin/">Dolphin Collection</a></li>
+                <li><a href="/en/pools/mova/">Mova Collection</a></li>
               </ul>
             </li>
-            <li><a href="../landscaping/" data-i18n="navLandscaping">Landscaping</a></li>
-            <li><a href="../excavation/" data-i18n="navExcavation">Excavation</a></li>
-            <li><a href="../gallery/" data-i18n="navGallery">Gallery</a></li>
-            <li><a href="../contact/" data-i18n="navContact">Contact</a></li>
-            <li><a href="../quote/" data-i18n="navQuote">Quote</a></li>
+            <li><a href="/en/landscaping/">Landscaping</a></li>
+            <li><a href="/en/excavation/">Excavation</a></li>
+            <li><a href="/en/gallery/">Gallery</a></li>
+            <li><a href="/en/contact/">Contact</a></li>
+            <li><a href="/en/quote/">Quote</a></li>
 
             <li class="mobile-lang">
-              <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+              <a href="/fr/soumission/" id="lang-toggle-mobile" class="lang-toggle">FR</a>
             </li>
           </ul>
         </nav>
@@ -99,14 +104,14 @@
 
     <main class="container">
       <section class="sub-hero quote">
-        <p class="eyebrow" data-i18n="landscapingEyebrow">Skella Services</p>
-        <h1 data-i18n="quoteTitle">Request a Quote</h1>
-        <p data-i18n="quoteText">
+        <p class="eyebrow">Skella Services</p>
+        <h1>Request a Quote</h1>
+        <p>
           Have a project in mind? Fill out the form below and we’ll help you plan your perfect outdoor space.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-secondary" href="../" data-i18n="backHome">Back to Home</a>
+          <a class="btn btn-secondary" href="/">Back to Home</a>
         </div>
       </section>
 
@@ -118,16 +123,15 @@
 
       <section class="finance-it-section" aria-labelledby="finance-it-heading">
         <div class="finance-it-card">
-          <p class="finance-it-eyebrow" data-i18n="financeItEyebrow">Flexible payments</p>
-          <h2 id="finance-it-heading" class="finance-it-title" data-i18n="financeItTitle">Financing Available</h2>
-          <p class="finance-it-text" data-i18n="financeItText">
+          <p class="finance-it-eyebrow">Flexible payments</p>
+          <h2 id="finance-it-heading" class="finance-it-title">Financing Available</h2>
+          <p class="finance-it-text">
             Spread the cost of your project with flexible payment plans through our financing partner.
           </p>
           <a
             id="finance-it-link"
             class="finance-it-link"
             href="https://www.financeit.ca/en/direct/payment-plan/YT0mZj0mbD0mcD0zQUtMUTVHSFZMeHdaaFU1Ml9EWkFBJnE9dHJ1ZSZzPTAmdD0mdj0x/apply"
-            data-i18n-href="financeItApplyUrl"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -137,9 +141,8 @@
               width="220"
               height="48"
               loading="lazy"
-              data-i18n-alt="financeItLogoAlt"
             />
-            <span class="finance-it-cta" data-i18n="financeItCta">Apply for financing</span>
+            <span class="finance-it-cta">Apply for financing</span>
           </a>
         </div>
       </section>
@@ -147,8 +150,8 @@
 
     <footer class="site-footer container">
       <div class="partner-links">
-        <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
-        <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
+        <span class="social-label">Partner brands</span>
+        <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/images/mova.svg" alt="Mova" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
@@ -157,47 +160,51 @@
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/images/rinox.svg" alt="Rinox" />
         </a>
-        <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
+        <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
         </a>
-        <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
+        <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
         </a>
-        <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
+        <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
         </a>
       </div>
+
       <div class="social-links">
-        <span class="social-label" data-i18n="socialLabel">Follow us</span>
-        <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <span class="social-label">Follow us</span>
+        <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
             <circle cx="12" cy="12" r="4.2"></circle>
             <circle cx="17.5" cy="6.5" r="1.1"></circle>
           </svg>
-          <span>Instagram</span></a
-        >
-        <a
-          href="https://www.facebook.com/profile.php?id=100064180712995"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100064180712995" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M14.4 8.2h2.2V5.1h-2.6c-3 0-4.5 1.8-4.5 4.7v2H7.3v3.1h2.2v5.8h3.2V15h2.6l.4-3.1h-3V10c0-1.1.4-1.8 1.7-1.8z"
             ></path>
           </svg>
-          <span>Facebook</span></a
-        >
-        <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M14.2 4.2c.7 1.5 1.8 2.4 3.2 2.9v2.7c-1.2-.1-2.3-.5-3.2-1.1v5.6c0 2.9-2.2 5.1-5.2 5.1-2.9 0-5-2.3-5-5 0-2.8 2.2-5 5.1-5 .3 0 .6 0 .9.1v2.8c-.3-.1-.6-.2-.9-.2-1.4 0-2.4 1.1-2.4 2.4s1 2.4 2.4 2.4c1.4 0 2.4-1.1 2.4-2.4V4.2h2.7z"
             ></path>
           </svg>
-          <span>TikTok</span></a
-        >
+          <span>TikTok</span>
+        </a>
       </div>
-      <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
+
+      <p>
+        Skella Pool Installation - Built for family moments.<br>
+        Serving the Greater Montreal Area.
+      </p>
     </footer>
 
     <script
@@ -205,6 +212,6 @@
       clienthub_id="cfdd2fae-d6ec-4286-9dab-e4f6aec31347-1970336"
       form_url="https://clienthub.getjobber.com/client_hubs/cfdd2fae-d6ec-4286-9dab-e4f6aec31347/public/work_request/embedded_work_request_form?form_id=1970336"
     ></script>
-    <script src="../script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

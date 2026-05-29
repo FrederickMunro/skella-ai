@@ -1,95 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://skella.ca/aquarino" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/images/skella-tab-logo.png"
-    />
-    <meta name="google-site-verification" content="ORkgyvgge72j43oTx0n0FPQrHcGXcMCoUFK8zuSaFUI" />
-    <meta name="google-site-verification" content="-YydiCsZ_0DliHPY3Ua-AnPwesjxbLO0BPcpd2tkpJQ" />
-    <meta name="theme-color" content="#113050" />
-    <title data-i18n="pageTitleAquarino">Skella | Aquarino Pools</title>
-    <meta
-      name="description"
-      data-i18n-content="metaDescAquarino"
-      content="Browse the Aquarino fiberglass pool collection from Skella — premium models, sizes, and turnkey installation."
-    />
-    <meta property="og:site_name" content="Groupe Skella" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://skella.ca/aquarino" />
-    <meta property="og:title" data-i18n-content="pageTitleAquarino" content="Skella | Aquarino Pools" />
-    <meta property="og:description" data-i18n-content="metaDescAquarino" content="Browse the Aquarino fiberglass pool collection from Skella — premium models, sizes, and turnkey installation." />
-    <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://skella.ca/aquarino" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/images/skella-tab-logo.png"
+  />
+  <meta name="google-site-verification" content="ORkgyvgge72j43oTx0n0FPQrHcGXcMCoUFK8zuSaFUI" />
+  <meta name="google-site-verification" content="-YydiCsZ_0DliHPY3Ua-AnPwesjxbLO0BPcpd2tkpJQ" />
+  <meta name="theme-color" content="#113050" />
 
-    <link rel="stylesheet" href="/styles.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-16871341515");
-    </script>
-  </head>
+  <!-- SEO: Geo targeting -->
+  <meta name="geo.region" content="CA-QC" />
+  <meta name="geo.placename" content="Montreal" />
+
+  <!-- SEO: Language alternates -->
+  <link rel="alternate" hreflang="en" href="https://skella.ca/en/aquarino/" />
+  <link rel="alternate" hreflang="fr" href="https://skella.ca/fr/aquarino/" />
+  <link rel="alternate" hreflang="x-default" href="https://skella.ca/en/aquarino/" />
+
+  <title>Skella | Aquarino Pools</title>
+  <meta
+    name="description"
+    content="Browse the Aquarino fiberglass pool collection from Skella — premium models, sizes, and turnkey installation."
+  />
+  <meta property="og:site_name" content="Groupe Skella" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://skella.ca/aquarino" />
+  <meta property="og:title" content="Skella | Aquarino Pools" />
+  <meta property="og:description" content="Browse the Aquarino fiberglass pool collection from Skella — premium models, sizes, and turnkey installation." />
+  <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
       <img src="/assets/images/cookie.svg" alt="Cookies" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
-      <h3 data-i18n="cookieTitle">We value your privacy</h4>
-      <p data-i18n="cookieText">We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.</p>
+      <h3>We value your privacy</h4>
+      <p>We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.</p>
       <div class="cookie-buttons">
-        <button data-i18n="cookieAccept" id="accept-cookies">Accept</button>
-        <button data-i18n="cookieReject" id="reject-cookies">Reject</button>
+        <button id="accept-cookies">Accept</button>
+        <button id="reject-cookies">Reject</button>
       </div>
     </div>
     <div class="bg-gradient"></div>
     <header class="site-header container">
-      <a class="brand" href="/" aria-label="Skella home">
-        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella logo" />
+      <a class="brand" href="/en/" aria-label="Skella home">
+        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella" />
       </a>
-    
+
       <div class="nav-wrapper">
-        <!-- HAMBURGER -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
-    
-        <!-- NAV -->
         <nav class="nav" id="mobile-nav">
           <ul class="nav-list">
             <li class="dropdown">
-              <button class="dropdown-toggle" data-i18n="navPools">Pools ▾</button>
+              <button class="dropdown-toggle">Pools ▾</button>
               <ul class="dropdown-menu">
-                <li><a href="/pools/" data-i18n="navColors">Colors</a></li>
-                <li><a href="/pools/aquarino/" data-i18n="navAquarino">Aquarino Collection</a></li>
-                <li><a href="/pools/dolphin/" data-i18n="navDolphin">Dolphin Collection</a></li>
-                <li><a href="/pools/mova/" data-i18n="navMova">Mova Collection</a></li>
+                <li><a href="/en/pools/">Colors</a></li>
+                <li><a href="/en/pools/aquarino/">Aquarino Collection</a></li>
+                <li><a href="/en/pools/dolphin/">Dolphin Collection</a></li>
+                <li><a href="/en/pools/mova/">Mova Collection</a></li>
               </ul>
             </li>
-            <li><a href="/landscaping/" data-i18n="navLandscaping">Landscaping</a></li>
-            <li><a href="/excavation/" data-i18n="navExcavation">Excavation</a></li>
-            <li><a href="/gallery/" data-i18n="navGallery">Gallery</a></li>
-            <li><a href="/contact/" data-i18n="navContact">Contact</a></li>
-            <li><a href="/quote/" data-i18n="navQuote">Quote</a></li>
-    
+            <li><a href="/en/landscaping/">Landscaping</a></li>
+            <li><a href="/en/excavation/">Excavation</a></li>
+            <li><a href="/en/gallery/">Gallery</a></li>
+            <li><a href="/en/contact/">Contact</a></li>
+            <li><a href="/en/quote/">Quote</a></li>
+
             <li class="mobile-lang">
-              <button id="lang-toggle-mobile" class="lang-toggle" data-i18n="toggleLabel">FR</button>
+              <a href="/fr/" id="lang-toggle-mobile" class="lang-toggle">FR</a>
             </li>
           </ul>
         </nav>
@@ -100,24 +96,24 @@
 
       <!-- HERO (same structure as other pages) -->
       <section class="sub-hero aquarino">
-        <p class="eyebrow" data-i18n="aquarinoEyebrow">Aquarino Collection</p>
-        <h1 data-i18n="aquarinoHeroTitle">Pool Designs</h1>
-        <p data-i18n="aquarinoHeroText">
+        <p class="eyebrow">Aquarino Collection</p>
+        <h1>Pool Designs</h1>
+        <p>
           Discover premium Aquarino pool models installed by Skella.
           Designed for elegance, durability, and modern outdoor living.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary" href="/quote/" data-i18n="collectionCta">
+          <a class="btn btn-primary" href="/quote/">
             Request a Quote
           </a>
-          <a class="btn btn-secondary" href="/" data-i18n="backHome">Back to Home</a>
+          <a class="btn btn-secondary" href="/">Back to Home</a>
         </div>
       </section>
 
       <!-- POOLS GRID -->
       <section class="services-list">
-        <h2 data-i18n="modelsTitle">Available Pool Models</h2>
+        <h2>Available Pool Models</h2>
 
         <div class="pool-grid">
 
@@ -125,13 +121,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/diamant.jpg" alt="Diamant Pool" />
             <img class="pool-model" src="/assets/images/aquarino/diamant-model.png" />
-            <h3 data-i18n="aquarinoNameDiamant">Diamant</h3>
-            <p data-i18n="aquarinoDescDiamant">
+            <h3>Diamant</h3>
+            <p>
               Small but versatile pool, perfect for compact spaces or spa option.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 3'9"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x10'</span>
+              <span><strong>Depth:</strong> 3'9"</span>
+              <span><strong>Size:</strong> 8'x10'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -147,7 +143,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -156,13 +152,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/topaze.jpg" alt="Topaze Pool" />
             <img class="pool-model" src="/assets/images/aquarino/topaze-model.png" />
-            <h3 data-i18n="aquarinoNameTopaze">Topaze</h3>
-            <p data-i18n="aquarinoDescTopaze">
+            <h3>Topaze</h3>
+            <p>
               Best-selling sleek design available in multiple formats.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x14', 12'x20', 12'x24', 12'x26'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 8'x14', 12'x20', 12'x24', 12'x26'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -178,7 +174,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -187,13 +183,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/zircon.jpg" alt="Zircon Pool" />
             <img class="pool-model" src="/assets/images/aquarino/zircon-model.png" />
-            <h3 data-i18n="aquarinoNameZircon">Zircon</h3>
-            <p data-i18n="aquarinoDescZircon">
+            <h3>Zircon</h3>
+            <p>
               Swim-focused design with side benches for relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x22', 12'x27'</span>
+              <span><strong>Depth:</strong> 5'</span>
+              <span><strong>Size:</strong> 12'x22', 12'x27'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -209,7 +205,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -218,13 +214,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/lazuli.jpg" alt="Lazuli Pool" />
             <img class="pool-model" src="/assets/images/aquarino/lazuli-model.png" />
-            <h3 data-i18n="aquarinoNameLazuli">Lazuli</h3>
-            <p data-i18n="aquarinoDescLazuli">
+            <h3>Lazuli</h3>
+            <p>
               Lounge-style pool with large swimming area for entertainment.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x28', 12'x32'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 12'x28', 12'x32'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -240,7 +236,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -249,13 +245,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/quartz.webp" alt="Quartz Pool" />
             <img class="pool-model" src="/assets/images/aquarino/quartz-model.png" />
-            <h3 data-i18n="aquarinoNameQuartz">Quartz</h3>
-            <p data-i18n="aquarinoDescQuartz">
+            <h3>Quartz</h3>
+            <p>
               Largest beach-style pool with family-friendly layout.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x31', 14'x36'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 14'x31', 14'x36'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -271,7 +267,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -280,13 +276,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/larimar.jpg" alt="Larimar Pool" />
             <img class="pool-model" src="/assets/images/aquarino/larimar-model.png" />
-            <h3 data-i18n="aquarinoNameLarimar">Larimar</h3>
-            <p data-i18n="aquarinoDescLarimar">
+            <h3>Larimar</h3>
+            <p>
               Perfect for social lounging and sunny relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'6"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 10'x25'</span>
+              <span><strong>Depth:</strong> 4'6"</span>
+              <span><strong>Size:</strong> 10'x25'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -302,7 +298,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -311,13 +307,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/perla.jpg" alt="Perla Pool" />
             <img class="pool-model" src="/assets/images/aquarino/perla-model.png" />
-            <h3 data-i18n="aquarinoNamePerla">Perla</h3>
-            <p data-i18n="aquarinoDescPerla">
+            <h3>Perla</h3>
+            <p>
               Integrated beach design combining play and relaxation.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x24'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 12'x24'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -333,7 +329,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -342,13 +338,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/opale.jpg" alt="Opale Pool" />
             <img class="pool-model" src="/assets/images/aquarino/opale-model.png" />
-            <h3 data-i18n="aquarinoNameOpale">Opale</h3>
-            <p data-i18n="aquarinoDescOpale">
+            <h3>Opale</h3>
+            <p>
               Versatile pool balancing modern design and comfort.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x16', 12'x20'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 8'x16', 12'x20'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -364,7 +360,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -373,13 +369,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/saphir.jpg" alt="Saphir Pool" />
             <img class="pool-model" src="/assets/images/aquarino/saphir-model.png" />
-            <h3 data-i18n="aquarinoNameSaphir">Saphir</h3>
-            <p data-i18n="aquarinoDescSaphir">
+            <h3>Saphir</h3>
+            <p>
               Spa-style pool with hydrotherapy and relaxation space.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x31', 14'x36'</span>
+              <span><strong>Depth:</strong> 4'10"</span>
+              <span><strong>Size:</strong> 14'x31', 14'x36'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -395,7 +391,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -404,13 +400,13 @@
           <article class="sub-card pool-card">
             <img class="pool-image" src="/assets/images/aquarino/tanza.jpg" alt="Tanza Pool" />
             <img class="pool-model" src="/assets/images/aquarino/tanza-model.png" />
-            <h3 data-i18n="aquarinoNameTanza">Tanza</h3>
-            <p data-i18n="aquarinoDescTanza">
+            <h3>Tanza</h3>
+            <p>
               Shallow modular beach area ideal for kids and lounging.
             </p>
             <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 10"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x11'</span>
+              <span><strong>Depth:</strong> 10"</span>
+              <span><strong>Size:</strong> 8'x11'</span>
             </div>
             <div class="pool-card-actions">
               <a
@@ -426,7 +422,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
-                <span data-i18n="viewPoolPdf">View Pool PDF</span>
+                <span>View Pool PDF</span>
               </a>
             </div>
           </article>
@@ -438,7 +434,7 @@
 
     <footer class="site-footer container">
       <div class="partner-links">
-        <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
+        <span class="social-label">Partner brands</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
           <img src="/assets/images/mova.svg" alt="Mova" />
         </a>
@@ -459,7 +455,7 @@
         </a>
       </div>
       <div class="social-links">
-        <span class="social-label" data-i18n="socialLabel">Follow us</span>
+        <span class="social-label">Follow us</span>
         <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer"
           ><svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
@@ -488,7 +484,7 @@
           <span>TikTok</span></a
         >
       </div>
-      <p data-i18n="footerText">Skella Pool Installation - Built for family moments.</p>
+      <p>Skella Pool Installation - Built for family moments.</p>
     </footer>
 
     <script src="/script.js"></script>
