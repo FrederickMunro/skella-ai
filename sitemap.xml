@@ -1,54 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://skella.ca/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/pools/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/pools/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/piscines/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/mova/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/pools/aquarino/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/aquarino/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/aquarino/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/piscines/aquarino/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/aquarino/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/aquarino/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/aquarino/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/pools/dolphin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/dolphin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/dolphin/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/piscines/dolphin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/dolphin/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/dolphin/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/dolphin/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/pools/mova/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/mova/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/mova/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/piscines/mova/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/mova/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/piscines/mova/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/excavation/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/excavation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/excavation/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/excavation/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/excavation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/excavation/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/excavation/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/landscaping/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/landscaping/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/landscaping/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/amenagement-paysager/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/amenagement-paysager/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/landscaping/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/amenagement-paysager/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/gallery/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/gallery/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/gallery/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/galerie/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/galerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/gallery/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/galerie/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/contact/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/contact/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/contact/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
-    <loc>https://skella.ca/quote/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://skella.ca/en/quote/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/quote/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/soumission/" />
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://skella.ca/fr/soumission/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skella.ca/en/quote/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skella.ca/fr/soumission/" />
+    <lastmod>2026-06-10</lastmod>
   </url>
 
 </urlset>
