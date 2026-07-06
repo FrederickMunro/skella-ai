@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="canonical" href="https://skella.ca/fr/galerie/" />
@@ -33,16 +35,24 @@
   <meta property="og:title" content="Skella | Galerie de projets" />
   <meta property="og:description" content="Découvrez les projets de piscines et de transformations de cours arrière Skella — avant et après installation." />
   <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
 
   <meta name="twitter:card" content="summary_large_image" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
 
   <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-    <img src="/assets/images/cookie.svg" alt="Cookies" />
+    <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
   </button>
 
   <div id="cookie-panel" class="cookie-panel">
@@ -79,7 +89,7 @@
               <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
             </ul>
           </li>
-          <li><a href="/fr/amenagement-paysager/">Aménagement Paysager</a></li>
+          <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
           <li><a href="/fr/excavation/">Excavation</a></li>
           <li><a href="/fr/galerie/">Galerie</a></li>
           <li><a href="/fr/contact/">Contact</a></li>
@@ -114,16 +124,16 @@
       <div class="compare-grid">
 
         <div class="compare-vertical">
-          <img src="/assets/images/gallery/before-1.avif">
-          <img class="img-top" src="/assets/images/gallery/after-1.avif">
+          <img src="/assets/images/gallery/before-1.avif" alt="Cour arrière avant installation de piscine et aménagement paysager — projet Skella, Montréal" loading="lazy">
+          <img class="img-top" src="/assets/images/gallery/after-1.avif" alt="Piscine en fibre de verre et aménagement paysager terminés — projet Skella, Montréal" loading="lazy">
           <div class="slider-handle"></div>
           <div class="img-label top-label">Avant</div>
           <div class="img-label bottom-label">Après</div>
         </div>
 
         <div class="compare-vertical">
-          <img src="/assets/images/gallery/before-2.avif">
-          <img class="img-top" src="/assets/images/gallery/after-2.avif">
+          <img src="/assets/images/gallery/before-2.avif" alt="Cour arrière avant rénovation extérieure — avant et après Skella" loading="lazy">
+          <img class="img-top" src="/assets/images/gallery/after-2.avif" alt="Espace extérieur terminé après rénovation — projet Skella" loading="lazy">
           <div class="slider-handle"></div>
           <div class="img-label top-label">Avant</div>
           <div class="img-label bottom-label">Après</div>
@@ -138,7 +148,7 @@
       <div class="projects-grid">
 
         <div class="project-card">
-          <img src="/assets/images/gallery/gallery-1.avif" class="project-img lightbox-trigger"/>
+          <img src="/assets/images/gallery/gallery-1.avif" class="project-img lightbox-trigger" alt="Piscine moderne et espace détente avec patio finition écologique grise — Skella Montréal" loading="lazy" />
 
           <div class="project-content">
             <h3>Pool moderne et espace détente</h3>
@@ -156,7 +166,7 @@
         </div>
 
         <div class="project-card">
-          <img src="/assets/images/project2.jpg" class="project-img lightbox-trigger"/>
+          <img src="/assets/images/project2.jpg" class="project-img lightbox-trigger" alt="Terrasse en pierre avec pergola sur mesure — projet Skella" loading="lazy" />
 
           <div class="project-content">
             <h3>Terrasse en pierre et pergola</h3>
@@ -173,7 +183,7 @@
         </div>
 
         <div class="project-card">
-          <img src="/assets/images/project3.jpg" class="project-img lightbox-trigger"/>
+          <img src="/assets/images/project3.jpg" class="project-img lightbox-trigger" alt="Refonte complète de cour arrière avec excavation et murs de soutènement — projet Skella" loading="lazy" />
 
           <div class="project-content">
             <h3>Refonte complète de cour arrière</h3>
@@ -198,22 +208,22 @@
       <div class="partner-links">
         <span class="social-label">Marques partenaires</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
 

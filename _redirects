@@ -1,0 +1,9 @@
+# Serve the English homepage at root (200) so Google can index skella.ca directly.
+/    /en/index.html    200
+
+# Consolidate the duplicate homepage URL.
+/en/    /    301!
+/en    /    301!
+
+# Serve the custom 404 page for any path without a matching file.
+/*  /404.html  404

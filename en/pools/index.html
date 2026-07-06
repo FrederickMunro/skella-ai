@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/en/pools/" />
     <link
@@ -33,6 +35,8 @@
     <meta property="og:title" content="Skella | Pool Services" />
     <meta property="og:description" content="Explore Skella pool design, colors, and fiberglass collections for your backyard project in Montreal and surrounding areas." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale:alternate" content="fr_CA" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,11 +45,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://skella.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pool Services",
+            "item": "https://skella.ca/en/pools/"
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>We value your privacy</h3>
@@ -115,8 +139,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Sea Salt</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/sel-de-mer-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/sel-de-mer-1.avif" alt="After" class="img-top" />
+              <img src="/assets/images/colors/sel-de-mer-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/sel-de-mer-1.avif" alt="After" class="img-top"  loading="lazy" />
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
                   <path
@@ -147,8 +171,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Arctic Grey</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/gris-artic-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/gris-artic-1.png" alt="After" class="img-top" />
+              <img src="/assets/images/colors/gris-artic-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/gris-artic-1.png" alt="After" class="img-top"  loading="lazy" />
               <div class="slider-handle"></div>
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
@@ -179,8 +203,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Ocean</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/ocean-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/ocean-1.png" alt="After" class="img-top" />
+              <img src="/assets/images/colors/ocean-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/ocean-1.png" alt="After" class="img-top"  loading="lazy" />
               <div class="slider-handle"></div>
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
@@ -211,8 +235,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Aqua</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/aqua-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/aqua-1.png" alt="After" class="img-top" />
+              <img src="/assets/images/colors/aqua-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/aqua-1.png" alt="After" class="img-top"  loading="lazy" />
               <div class="slider-handle"></div>
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
@@ -243,8 +267,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Pacific</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/pacific-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/pacific-1.png" alt="After" class="img-top" />
+              <img src="/assets/images/colors/pacific-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/pacific-1.png" alt="After" class="img-top"  loading="lazy" />
               <div class="slider-handle"></div>
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
@@ -275,8 +299,8 @@
           <div class="compare-group-item">
             <h3 class="compare-group-item-title">Galaxy</h3>
             <div class="compare-vertical">
-              <img src="/assets/images/colors/galaxy-0.png" alt="Before" class="img-bottom" />
-              <img src="/assets/images/colors/galaxy-1.png" alt="After" class="img-top" />
+              <img src="/assets/images/colors/galaxy-0.png" alt="Before" class="img-bottom"  loading="lazy" />
+              <img src="/assets/images/colors/galaxy-1.png" alt="After" class="img-top"  loading="lazy" />
               <div class="slider-handle"></div>
               <div class="img-label top-label">
                 <svg viewBox="0 0 24 24" class="label-icon">
@@ -341,22 +365,22 @@
       <div class="partner-links">
         <span class="social-label">Partner brands</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
 

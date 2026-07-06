@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/fr/piscines/aquarino/" />
     <link rel="icon" type="image/png" href="/assets/images/skella-tab-logo.png" />
@@ -21,16 +23,44 @@
     <meta property="og:title" content="Skella | Piscines Aquarino" />
     <meta property="og:description" content="Découvrez la collection de piscines en fibre de verre Aquarino de Skella — modèles haut de gamme, dimensions et installation clé en main." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://skella.ca/fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Piscines",
+            "item": "https://skella.ca/fr/piscines/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Collection Aquarino",
+            "item": "https://skella.ca/fr/piscines/aquarino/"
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>Nous respectons votre vie privée</h3>
@@ -63,7 +93,7 @@
                 <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
               </ul>
             </li>
-            <li><a href="/fr/amenagement-paysager/">Aménagement paysager</a></li>
+            <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
             <li><a href="/fr/excavation/">Excavation</a></li>
             <li><a href="/fr/galerie/">Galerie</a></li>
             <li><a href="/fr/contact/">Contact</a></li>
@@ -104,15 +134,25 @@
 
           <!-- DIAMANT -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/diamant.jpg" alt="Diamant Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/diamant-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/diamant.jpg" alt="Diamant Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/diamant-model.png"  loading="lazy" />
             <h3>Diamant</h3>
             <p>
               Petite piscine polyvalente, parfaite pour les espaces compacts ou en option spa.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 3'9"</span>
-              <span><strong>Dimensions :</strong> 8'x10'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>3'9"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 10'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -135,15 +175,28 @@
 
           <!-- TOPAZE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/topaze.jpg" alt="Topaze Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/topaze-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/topaze.jpg" alt="Topaze Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/topaze-model.png"  loading="lazy" />
             <h3>Topaze</h3>
             <p>
               Design épuré très populaire, disponible en plusieurs formats.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 8'x14', 12'x20', 12'x24', 12'x26'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 14'</span>
+                  <span>12' x 20'</span>
+                  <span>12' x 24'</span>
+                  <span>12' x 26'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -166,15 +219,26 @@
 
           <!-- ZIRCON -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/zircon.jpg" alt="Zircon Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/zircon-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/zircon.jpg" alt="Zircon Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/zircon-model.png"  loading="lazy" />
             <h3>Zircon</h3>
             <p>
               Design axé sur la nage avec banquettes latérales pour la détente.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'</span>
-              <span><strong>Dimensions :</strong> 12'x22', 12'x27'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 22'</span>
+                  <span>12' x 27'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -197,15 +261,26 @@
 
           <!-- LAZULI -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/lazuli.jpg" alt="Lazuli Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/lazuli-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/lazuli.jpg" alt="Lazuli Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/lazuli-model.png"  loading="lazy" />
             <h3>Lazuli</h3>
             <p>
               Piscine de type lounge avec grande zone de baignade pour recevoir.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x28', 12'x32'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 28'</span>
+                  <span>12' x 32'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -228,15 +303,26 @@
 
           <!-- QUARTZ -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/quartz.webp" alt="Quartz Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/quartz-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/quartz.webp" alt="Quartz Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/quartz-model.png"  loading="lazy" />
             <h3>Quartz</h3>
             <p>
               Plus grande piscine de type plage avec aménagement familial.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 14'x31', 14'x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 31'</span>
+                  <span>14' x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -259,15 +345,25 @@
 
           <!-- LARIMAR -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/larimar.jpg" alt="Larimar Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/larimar-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/larimar.jpg" alt="Larimar Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/larimar-model.png"  loading="lazy" />
             <h3>Larimar</h3>
             <p>
               Parfaite pour socialiser et se détendre au soleil.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'6"</span>
-              <span><strong>Dimensions :</strong> 10'x25'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>10' x 25'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -290,15 +386,25 @@
 
           <!-- PERLA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/perla.jpg" alt="Perla Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/perla-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/perla.jpg" alt="Perla Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/perla-model.png"  loading="lazy" />
             <h3>Perla</h3>
             <p>
               Design plage intégré alliant jeu et détente.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -321,15 +427,26 @@
 
           <!-- OPALE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/opale.jpg" alt="Opale Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/opale-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/opale.jpg" alt="Opale Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/opale-model.png"  loading="lazy" />
             <h3>Opale</h3>
             <p>
               Piscine polyvalente alliant design moderne et confort.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 8'x16', 12'x20'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 16'</span>
+                  <span>12' x 20'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -352,15 +469,26 @@
 
           <!-- SAPHIR -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/saphir.jpg" alt="Saphir Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/saphir-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/saphir.jpg" alt="Saphir Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/saphir-model.png"  loading="lazy" />
             <h3>Saphir</h3>
             <p>
               Piscine de type spa avec espace d'hydrothérapie et de détente.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 14'x31', 14'x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 31'</span>
+                  <span>14' x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -383,15 +511,25 @@
 
           <!-- TANZA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/aquarino/tanza.jpg" alt="Tanza Pool" />
-            <img class="pool-model" src="/assets/images/aquarino/tanza-model.png" />
+            <img class="pool-image" src="/assets/images/aquarino/tanza.jpg" alt="Tanza Pool"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/aquarino/tanza-model.png"  loading="lazy" />
             <h3>Tanza</h3>
             <p>
               Zone plage modulaire peu profonde idéale pour les enfants et la détente.
             </p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 10"</span>
-              <span><strong>Dimensions :</strong> 8'x11'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 11'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -421,22 +559,22 @@
       <div class="partner-links">
         <span class="social-label">Marques partenaires</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
       <div class="social-links">

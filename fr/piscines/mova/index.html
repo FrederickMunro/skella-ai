@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/fr/piscines/mova/" />
     <link rel="icon" type="image/png" href="/assets/images/skella-tab-logo.png" />
@@ -21,16 +23,44 @@
     <meta property="og:title" content="Skella | Piscines Mova" />
     <meta property="og:description" content="Parcourez la collection de piscines en fibre de verre Mova de Skella — des modèles compacts aux piscines de nage pleine grandeur." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://skella.ca/fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Piscines",
+            "item": "https://skella.ca/fr/piscines/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Collection Mova",
+            "item": "https://skella.ca/fr/piscines/mova/"
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>Nous respectons votre vie privée</h3>
@@ -63,7 +93,7 @@
                 <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
               </ul>
             </li>
-            <li><a href="/fr/amenagement-paysager/">Aménagement paysager</a></li>
+            <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
             <li><a href="/fr/excavation/">Excavation</a></li>
             <li><a href="/fr/galerie/">Galerie</a></li>
             <li><a href="/fr/contact/">Contact</a></li>
@@ -82,7 +112,7 @@
       <!-- HERO -->
       <section class="sub-hero mova">
         <p class="eyebrow">Collection Mova</p>
-        <h1>Modern Modèles de piscines</h1>
+        <h1>Modèles de piscines</h1>
         <p>
           Explorez la collection de piscines en fibre de verre Mova — conçues pour
           le confort, la performance et une vie extérieure élégante.
@@ -107,13 +137,23 @@
 
           <!-- 8x10 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/8x10.webp" />
-            <img class="pool-model" src="/assets/images/mova/8x10-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/8x10.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/8x10-model.webp"  loading="lazy" />
             <h3>8x10</h3>
             <p>Piscine compacte de détente de type spa.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 3'9"</span>
-              <span><strong>Dimensions :</strong> 8'6"x10'2"</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>3'9"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8'6"x10'2"</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -136,13 +176,23 @@
 
           <!-- 8x16 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/8x16.webp" />
-            <img class="pool-model" src="/assets/images/mova/8x16-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/8x16.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/8x16-model.webp"  loading="lazy" />
             <h3>8x16</h3>
             <p>Parfaite pour les petites cours et l'été rafraîchissant.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'9"</span>
-              <span><strong>Dimensions :</strong> 8'x16'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'9"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 16'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -165,13 +215,23 @@
 
           <!-- 9x24 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/9x24.webp" />
-            <img class="pool-model" src="/assets/images/mova/9x24-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/9x24.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/9x24-model.webp"  loading="lazy" />
             <h3>9x24</h3>
             <p>Design élégant et compact avec excellente zone de nage.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 9'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>9' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -194,13 +254,23 @@
 
           <!-- 9x24 LAP -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/9x24-a.webp" />
-            <img class="pool-model" src="/assets/images/mova/9x24-a-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/9x24-a.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/9x24-a-model.webp"  loading="lazy" />
             <h3>9x24 piscine de nage</h3>
             <p>Conçue pour l'entraînement avec système de jets de résistance en option.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 9'7"x24'3"</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>9'7"x24'3"</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -223,13 +293,23 @@
 
           <!-- 10x20 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/10x20.webp" />
-            <img class="pool-model" src="/assets/images/mova/10x20-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/10x20.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/10x20-model.webp"  loading="lazy" />
             <h3>10x20</h3>
             <p>Design équilibré avec sièges et marches d'angle.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 10'x20'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>10' x 20'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -252,13 +332,23 @@
 
           <!-- 11x19 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/11x19.webp" />
-            <img class="pool-model" src="/assets/images/mova/11x19-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/11x19.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/11x19-model.webp"  loading="lazy" />
             <h3>11x19</h3>
             <p>Élégance compacte avec sièges intégrés.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 11'x19'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>11' x 19'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -281,13 +371,23 @@
 
           <!-- 11x23 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/11x23.webp" />
-            <img class="pool-model" src="/assets/images/mova/11x23-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/11x23.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/11x23-model.webp"  loading="lazy" />
             <h3>11x23</h3>
             <p>Aménagement spacieux équilibrant jeu et détente.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'9"</span>
-              <span><strong>Dimensions :</strong> 11'x23'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'9"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>11' x 23'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -310,13 +410,23 @@
 
           <!-- 11x25 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/11x25.webp" />
-            <img class="pool-model" src="/assets/images/mova/11x25-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/11x25.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/11x25-model.webp"  loading="lazy" />
             <h3>11x25</h3>
             <p>Aménagement spacieux équilibrant jeu et détente.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 11'x25'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>11' x 25'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -339,13 +449,23 @@
 
           <!-- 12x12 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x12.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x12-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x12.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x12-model.webp"  loading="lazy" />
             <h3>12x12 pataugeoire</h3>
             <p>Piscine peu profonde pour les enfants et la détente.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 18"</span>
-              <span><strong>Dimensions :</strong> 12'x12'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>18"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 12'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -368,13 +488,23 @@
 
           <!-- 12x20 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x20.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x20-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x20.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x20-model.webp"  loading="lazy" />
             <h3>12x20</h3>
             <p>Piscine axée sur le confort avec banquettes latérales.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x20'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 20'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -397,13 +527,23 @@
 
           <!-- 12x22 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x22.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x22-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x22.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x22-model.webp"  loading="lazy" />
             <h3>12x22</h3>
             <p>Piscine classique de taille moyenne pour le plaisir quotidien.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x22'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 22'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -426,13 +566,23 @@
 
           <!-- 12x24 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x24.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x24-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x24.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x24-model.webp"  loading="lazy" />
             <h3>12x24</h3>
             <p>Piscine classique de taille moyenne pour le plaisir quotidien.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -455,13 +605,23 @@
 
           <!-- 12x24 SLOPE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x24-a.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x24-a-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x24-a.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x24-a-model.webp"  loading="lazy" />
             <h3>12x24 - pente</h3>
             <p>Piscine classique de taille moyenne pour le plaisir quotidien.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'5"</span>
-              <span><strong>Dimensions :</strong> 12'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'5"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -484,13 +644,23 @@
 
           <!-- 12x25 LEDGE ******** -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x25.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x25-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x25.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x25-model.webp"  loading="lazy" />
             <h3>12x25 avec plage soleil</h3>
             <p>Piscine classique de taille moyenne pour le plaisir quotidien.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x25'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 25'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -513,13 +683,23 @@
 
           <!-- 12x28 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x28.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x28-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x28.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x28-model.webp"  loading="lazy" />
             <h3>12x28</h3>
             <p>Grande zone de détente avec terrasse peu profonde.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x28'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 28'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -542,13 +722,23 @@
 
           <!-- 12x30 LEDGE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x30.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x30-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x30.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x30-model.webp"  loading="lazy" />
             <h3>12x30 avec plage soleil</h3>
             <p>Grande zone de détente avec terrasse peu profonde.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x30'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 30'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -571,13 +761,23 @@
 
           <!-- 12x34 LEDGE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x34.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x34-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x34.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x34-model.webp"  loading="lazy" />
             <h3>12x34 avec plage soleil</h3>
             <p>Grande zone de détente avec terrasse peu profonde.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x34'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 34'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -600,13 +800,23 @@
 
           <!-- 12x37 LEDGE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x37.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x37-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x37.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x37-model.webp"  loading="lazy" />
             <h3>12x37 avec plage soleil</h3>
             <p>Grande zone de détente avec terrasse peu profonde.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'10"</span>
-              <span><strong>Dimensions :</strong> 12'x37'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 37'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -629,13 +839,23 @@
 
           <!-- 13x27 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/13x27.webp" />
-            <img class="pool-model" src="/assets/images/mova/13x27-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/13x27.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/13x27-model.webp"  loading="lazy" />
             <h3>13x27 Slope</h3>
             <p>Sloped bottom ideal for swimming and play.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'9"</span>
-              <span><strong>Dimensions :</strong> 13'x27'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'9"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>13' x 27'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -658,13 +878,23 @@
 
           <!-- 14x28 -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/14x28.webp" />
-            <img class="pool-model" src="/assets/images/mova/14x28-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/14x28.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/14x28-model.webp"  loading="lazy" />
             <h3>14x28 Slope</h3>
             <p>Sloped bottom ideal for swimming and play.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'11"</span>
-              <span><strong>Dimensions :</strong> 14'x28'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'11"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 28'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -687,13 +917,23 @@
 
           <!-- 12x25 SIGNATURE -->
           <!-- <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/mova/12x25-sig.webp" />
-            <img class="pool-model" src="/assets/images/mova/12x25-sig-model.webp" />
+            <img class="pool-image" src="/assets/images/mova/12x25-sig.webp"  loading="lazy" />
+            <img class="pool-model" src="/assets/images/mova/12x25-sig-model.webp"  loading="lazy" />
             <h3>12x25 Signature</h3>
             <p>Sloped bottom ideal for swimming and play.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'11"</span>
-              <span><strong>Dimensions :</strong> 14'x28'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'11"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 28'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -723,22 +963,22 @@
       <div class="partner-links">
         <span class="social-label">Marques partenaires</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
       <div class="social-links">

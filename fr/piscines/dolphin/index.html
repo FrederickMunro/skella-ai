@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/fr/piscines/dolphin/" />
     <link rel="icon" type="image/png" href="/assets/images/skella-tab-logo.png" />
@@ -21,16 +23,44 @@
     <meta property="og:title" content="Skella | Piscines Dolphin" />
     <meta property="og:description" content="Parcourez la collection de piscines en fibre de verre Dolphin de Skella — formes et modèles pour chaque cour arrière." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://skella.ca/fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Piscines",
+            "item": "https://skella.ca/fr/piscines/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Collection Dolphin",
+            "item": "https://skella.ca/fr/piscines/dolphin/"
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>Nous respectons votre vie privée</h3>
@@ -63,7 +93,7 @@
                 <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
               </ul>
             </li>
-            <li><a href="/fr/amenagement-paysager/">Aménagement paysager</a></li>
+            <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
             <li><a href="/fr/excavation/">Excavation</a></li>
             <li><a href="/fr/galerie/">Galerie</a></li>
             <li><a href="/fr/contact/">Contact</a></li>
@@ -104,13 +134,23 @@
 
           <!-- BAYFIELD -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/bayfield.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/bayfield-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/bayfield-model.png"  loading="lazy" />
             <h3>Bayfield</h3>
             <p>Piscine grand format avec marches latérales.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'</span>
-              <span><strong>Dimensions :</strong> 13'6"x31', 15'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>13'6" x 31'</span>
+                  <span>15' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -133,13 +173,22 @@
 
           <!-- BRITANNIA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/britannia.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/britannia-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/britannia-model.png"  loading="lazy" />
             <h3>Britannia</h3>
             <p>Piscine grand format avec marches latérales.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'</span>
-              <span><strong>Dimensions :</strong> 16'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -162,13 +211,22 @@
 
           <!-- ELORA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/elora.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/elora-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/elora-model.png"  loading="lazy" />
             <h3>Elora</h3>
             <p>Piscine rectangulaire à fond plat.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'</span>
-              <span><strong>Dimensions :</strong> 12'x18'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 18'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -191,13 +249,22 @@
 
           <!-- KELOWNA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/kelowna.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/kelowna-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/kelowna-model.png"  loading="lazy" />
             <h3>Kelowna</h3>
             <p>Grande piscine à fond incliné avec banquettes intégrées.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'</span>
-              <span><strong>Dimensions :</strong> 16'x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -220,13 +287,24 @@
 
           <!-- SANDBANKS -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/sandbanks.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/sandbanks-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/sandbanks-model.png"  loading="lazy" />
             <h3>Sandbanks</h3>
             <p>Piscine à fond plat avec banquettes intégrées.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 4'6"</span>
-              <span><strong>Dimensions :</strong> 8'x17', 8'x26', 12'x26'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 17'</span>
+                  <span>8' x 26'</span>
+                  <span>12' x 26'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -249,13 +327,22 @@
 
           <!-- SAUBLE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/sauble.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/sauble-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/sauble-model.png"  loading="lazy" />
             <h3>Sauble</h3>
             <p>Grande piscine rectangulaire avec entrée plage et pente.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'</span>
-              <span><strong>Dimensions :</strong> 16'x41'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 41'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -278,13 +365,22 @@
 
           <!-- SOUTH HAMPTON -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/south-hampton.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/south-hampton-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/south-hampton-model.png"  loading="lazy" />
             <h3>South Hampton</h3>
             <p>Grande piscine rectangulaire avec entrée plage et pente.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'</span>
-              <span><strong>Dimensions :</strong> 14'x30'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 30'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -307,13 +403,22 @@
 
           <!-- TOFINO -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/tofino.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/tofino-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/tofino-model.png"  loading="lazy" />
             <h3>Tofino</h3>
             <p>Plus grande piscine en fibre de verre disponible au Canada.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 8'</span>
-              <span><strong>Dimensions :</strong> 16'x40'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>8'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 40'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -344,13 +449,22 @@
     
           <!-- DARLINGTON -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/darlington.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/darlington-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/darlington-model.png"  loading="lazy" />
             <h3>Darlington</h3>
             <p>Piscine libre à fond incliné.</p>
-            <div class="pool-specs">
-            <span><strong>Profondeur :</strong> 5'4"</span>
-            <span><strong>Dimensions :</strong> 12'x25'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'4"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 25'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -373,14 +487,24 @@
 
           <!-- OKA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/oka.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/oka-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/oka-model.png"  loading="lazy" />
             <h3>Oka</h3>
             <p>Piscine libre à fond incliné.</p>
-            <div class="pool-specs">
-            <span><strong>Profondeur :</strong> 6'2"</span>
-            <span><strong>Dimensions :</strong> 13'x33'</span>
-            <span><strong>Alt. :</strong> 6'5" · 15'6"x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeurs</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'2"</span>
+                  <span>6'5"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>13' x 33'</span>
+                  <span>15'6" x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -403,13 +527,22 @@
 
           <!-- DOVER -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/dover.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/dover-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/dover-model.png"  loading="lazy" />
             <h3>Dover</h3>
             <p>Piscine libre à fond incliné.</p>
-            <div class="pool-specs">
-            <span><strong>Profondeur :</strong> 5'8"</span>
-            <span><strong>Dimensions :</strong> 16'x38'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'8"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 38'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -432,13 +565,22 @@
 
           <!-- WASAGA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/wasaga.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/wasaga-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/wasaga-model.png"  loading="lazy" />
             <h3>Wasaga</h3>
             <p>Piscine libre à fond incliné.</p>
-            <div class="pool-specs">
-            <span><strong>Profondeur :</strong> 5'10"</span>
-            <span><strong>Dimensions :</strong> 14'x32'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 32'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -461,13 +603,22 @@
 
           <!-- HOPEWELL -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/hopewell.jpg" alt="Hopewell Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/hopewell-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/hopewell-model.png" alt="Hopewell Pool"  loading="lazy" />
             <h3>Hopewell</h3>
             <p>Modèle classique à fond incliné.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'</span>
-              <span><strong>Dimensions :</strong> 15'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>15' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -498,13 +649,22 @@
 
           <!-- FLORENCIA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/florencia.jpg" alt="Florencia Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/florencia-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/florencia-model.png" alt="Florencia Pool"  loading="lazy" />
             <h3>Florencia</h3>
             <p>Modèle classique à fond incliné.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'</span>
-              <span><strong>Dimensions :</strong> 14'x34'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 34'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -527,13 +687,23 @@
 
           <!-- LEAMY -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/leamy.jpg" alt="Leamy Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/leamy-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/leamy-model.png" alt="Leamy Pool"  loading="lazy" />
             <h3>Leamy</h3>
             <p>Modèle classique à fond incliné.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 6'6"</span>
-              <span><strong>Dimensions :</strong> 12'x29', 15'x34'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 29'</span>
+                  <span>15' x 34'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -556,13 +726,22 @@
 
           <!-- ROSEWAY -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/roseway.jpg" alt="Roseway Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/roseway-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/roseway-model.png" alt="Roseway Pool"  loading="lazy" />
             <h3>Roseway</h3>
             <p>Modèle classique à fond incliné.</p>
-            <div class="pool-specs">
-              <span><strong>Profondeur :</strong> 5'6"</span>
-              <span><strong>Dimensions :</strong> 10'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Profondeur</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label">Dimensions</span>
+                <div class="pool-spec-bubbles">
+                  <span>10' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -592,22 +771,22 @@
       <div class="partner-links">
         <span class="social-label">Marques partenaires</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
       <div class="social-links">

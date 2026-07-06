@@ -1,66 +1,56 @@
 let currentLanguage = "en";
 
+const contactMessages = {
+  en: {
+    contactFormSuccess: "Thank you! Your message has been sent.",
+    contactFormError: "Something went wrong. Please try again.",
+    contactSending: "Sending...",
+    contactSubmit: "Send",
+  },
+  fr: {
+    contactFormSuccess: "Merci! Votre message a été envoyé.",
+    contactFormError: "Une erreur s'est produite. Veuillez réessayer.",
+    contactSending: "Envoi en cours...",
+    contactSubmit: "Envoyer",
+  },
+};
+
+function getPageLanguage() {
+  const path = window.location.pathname;
+  if (/\/fr(\/|$)/.test(path)) return "fr";
+  if (/\/en(\/|$)/.test(path)) return "en";
+  const stored = localStorage.getItem("skella_language");
+  if (stored === "fr" || stored === "en") return stored;
+  return document.documentElement.lang?.startsWith("fr") ? "fr" : "en";
+}
+
+function getContactCopy(lang = getPageLanguage()) {
+  return {
+    ...contactMessages.en,
+    ...contactMessages[lang],
+    ...(window.translations?.[lang] || {}),
+  };
+}
+
 function applyLanguage(language) {
-  const table = translations[language];
-  if (!table) return;
-
-  document.querySelectorAll("[data-i18n]").forEach((node) => {
-    const key = node.getAttribute("data-i18n");
-    if (table[key]) {
-      node.textContent = table[key];
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
-    const key = node.getAttribute("data-i18n-placeholder");
-    if (table[key]) {
-      node.placeholder = table[key];
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
-    const key = node.getAttribute("data-i18n-aria");
-    if (table[key]) {
-      node.setAttribute("aria-label", table[key]);
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-href]").forEach((node) => {
-    const key = node.getAttribute("data-i18n-href");
-    if (table[key]) {
-      node.setAttribute("href", table[key]);
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
-    const key = node.getAttribute("data-i18n-alt");
-    if (table[key]) {
-      node.setAttribute("alt", table[key]);
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-content]").forEach((node) => {
-    const key = node.getAttribute("data-i18n-content");
-    if (table[key]) {
-      node.setAttribute("content", table[key]);
-    }
-  });
 
   document.documentElement.lang = language;
   localStorage.setItem("skella_language", language);
 
+  const t = getContactCopy(language);
+
   const contactStatus = document.getElementById("contact-form-status");
   if (contactStatus && !contactStatus.hidden) {
     if (contactStatus.classList.contains("is-success")) {
-      contactStatus.textContent = table.contactFormSuccess || "";
+      contactStatus.textContent = t.contactFormSuccess || "";
     } else if (contactStatus.classList.contains("is-error")) {
-      contactStatus.textContent = table.contactFormError || "";
+      contactStatus.textContent = t.contactFormError || "";
     }
   }
 
   const contactSubmit = document.querySelector("#contact-form button[type='submit']");
   if (contactSubmit && !contactSubmit.disabled) {
-    contactSubmit.textContent = table.contactSubmit || contactSubmit.textContent;
+    contactSubmit.textContent = t.contactSubmit || contactSubmit.textContent;
   }
 }
 
@@ -69,10 +59,7 @@ function toggleLanguage() {
   applyLanguage(currentLanguage);
 }
 
-const storedLanguage = localStorage.getItem("skella_language");
-if (storedLanguage && (storedLanguage === "en" || storedLanguage === "fr")) {
-  currentLanguage = storedLanguage;
-}
+currentLanguage = getPageLanguage();
 applyLanguage(currentLanguage);
 
 document
@@ -111,19 +98,29 @@ document.querySelectorAll(".compare-vertical").forEach((container) => {
     updatePosition(e.clientY);
   });
 
-  container.addEventListener("touchstart", (e) => {
-    isDragging = true;
-    updatePosition(e.touches[0].clientY);
-  });
+  container.addEventListener(
+    "touchstart",
+    (e) => {
+      e.preventDefault();
+      isDragging = true;
+      updatePosition(e.touches[0].clientY);
+    },
+    { passive: false }
+  );
 
   window.addEventListener("touchend", () => {
     isDragging = false;
   });
 
-  window.addEventListener("touchmove", (e) => {
-    if (!isDragging) return;
-    updatePosition(e.touches[0].clientY);
-  });
+  window.addEventListener(
+    "touchmove",
+    (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      updatePosition(e.touches[0].clientY);
+    },
+    { passive: false }
+  );
 });
 
 const hamburger = document.getElementById("hamburger");
@@ -254,15 +251,75 @@ function initBackToTop() {
 
 initBackToTop();
 
+function formatPhoneDigits(digits) {
+  if (!digits) return "";
+  if (digits.length <= 3) return `(${digits}`;
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6, 10)}`;
+}
+
+function initPhoneInputs() {
+  document.querySelectorAll('input[name="phone"]').forEach((input) => {
+    if (input.dataset.phoneInit) return;
+    input.dataset.phoneInit = "true";
+
+    input.type = "text";
+    input.inputMode = "numeric";
+    input.maxLength = 14;
+
+    input.addEventListener("keydown", (e) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const allowed = [
+        "Backspace",
+        "Delete",
+        "Tab",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+      ];
+      if (allowed.includes(e.key)) return;
+      if (/^\d$/.test(e.key)) return;
+      e.preventDefault();
+    });
+
+    input.addEventListener("beforeinput", (e) => {
+      if (!e.data || e.inputType.startsWith("delete")) return;
+      if (!/^\d+$/.test(e.data)) e.preventDefault();
+    });
+
+    input.addEventListener("input", () => {
+      const digitsBeforeCursor = input.value
+        .slice(0, input.selectionStart)
+        .replace(/\D/g, "").length;
+      const digits = input.value.replace(/\D/g, "").slice(0, 10);
+      const formatted = formatPhoneDigits(digits);
+
+      input.value = formatted;
+
+      let cursor = 0;
+      let digitsSeen = 0;
+      while (cursor < formatted.length && digitsSeen < digitsBeforeCursor) {
+        if (/\d/.test(formatted[cursor])) digitsSeen++;
+        cursor++;
+      }
+      input.setSelectionRange(cursor, cursor);
+    });
+  });
+}
+
 function initContactForm() {
   const form = document.getElementById("contact-form");
   const statusEl = document.getElementById("contact-form-status");
   if (!form || !statusEl) return;
 
   const submitBtn = form.querySelector('button[type="submit"]');
+  const copy = getContactCopy();
 
   function setStatus(type, messageKey) {
-    const message = translations[currentLanguage]?.[messageKey] || "";
+    const message = copy[messageKey] || "";
     statusEl.textContent = message;
     statusEl.hidden = !message;
     statusEl.classList.remove("is-success", "is-error");
@@ -286,7 +343,7 @@ function initContactForm() {
     submitBtn.disabled = true;
     statusEl.hidden = true;
     statusEl.classList.remove("is-success", "is-error");
-    submitBtn.textContent = translations[currentLanguage]?.contactSending || "Sending...";
+    submitBtn.textContent = copy.contactSending || "Sending...";
 
     try {
       const response = await fetch("/", {
@@ -305,32 +362,12 @@ function initContactForm() {
       setStatus("error", "contactFormError");
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = translations[currentLanguage]?.contactSubmit || defaultSubmitText;
+      submitBtn.textContent = copy.contactSubmit || defaultSubmitText;
     }
   });
-
-  const phoneInput = document.querySelector('input[name="phone"]');
-
-  if (phoneInput) {
-    phoneInput.addEventListener("input", (e) => {
-      let value = e.target.value.replace(/\D/g, ""); // remove all non-numbers
-
-      // limit to 10 digits (standard NA format)
-      value = value.slice(0, 10);
-
-      let formatted = value;
-
-      if (value.length > 6) {
-        formatted = `${value.slice(0, 3)}-${value.slice(3, 6)}-${value.slice(6)}`;
-      } else if (value.length > 3) {
-        formatted = `${value.slice(0, 3)}-${value.slice(3)}`;
-      }
-
-      e.target.value = formatted;
-    });
-  }
 }
 
+initPhoneInputs();
 initContactForm();
 
 function setCookie(name, value, days) {
@@ -346,6 +383,56 @@ function getCookie(name) {
     if (key === name) return value;
   }
   return null;
+}
+
+function hasTrackingConsent() {
+  return (
+    window.__skellaTrackingAllowed === true ||
+    getCookie("cookieConsent") === "accepted"
+  );
+}
+
+function deleteCookie(name) {
+  const expired = `${name}=; Max-Age=0; path=/`;
+  document.cookie = expired;
+  document.cookie = `${expired}; domain=.skella.ca`;
+  document.cookie = `${expired}; domain=skella.ca`;
+  document.cookie = `${expired}; domain=.skella.ca; Secure; SameSite=Lax`;
+}
+
+function clearTrackingCookies() {
+  if (typeof window.skellaClearTrackingCookies === "function") {
+    window.skellaClearTrackingCookies();
+    return;
+  }
+
+  const names = new Set();
+  document.cookie.split("; ").forEach((entry) => {
+    if (!entry) return;
+    const name = entry.split("=")[0];
+    if (/^(_ga|_gid|_gcl)/.test(name)) names.add(name);
+  });
+  names.forEach(deleteCookie);
+}
+
+function denyTracking() {
+  window.__skellaTrackingAllowed = false;
+  window.__gaLoaded = false;
+
+  if (typeof window.skellaDenyTracking === "function") {
+    window.skellaDenyTracking();
+    return;
+  }
+
+  clearTrackingCookies();
+}
+
+function grantTracking() {
+  window.__skellaTrackingAllowed = true;
+
+  if (typeof window.skellaGrantTracking === "function") {
+    window.skellaGrantTracking();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -375,24 +462,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   acceptBtn.addEventListener("click", () => {
     setCookie("cookieConsent", "accepted", 180);
+    grantTracking();
     enableTracking();
     closePanel();
   });
 
   rejectBtn.addEventListener("click", () => {
     setCookie("cookieConsent", "rejected", 180);
+    denyTracking();
     closePanel();
     location.reload();
   });
 
   // INITIAL STATE
   if (consent === "accepted") {
+    grantTracking();
     enableTracking();
     closePanel();
     return;
   }
 
   if (consent === "rejected") {
+    denyTracking();
     closePanel();
     return;
   }
@@ -401,12 +492,16 @@ document.addEventListener("DOMContentLoaded", () => {
   openPanel();
 });
 
+const GOOGLE_ADS_ID = "AW-16871341515";
+const GA4_MEASUREMENT_ID = "G-J7FS7C2HP5";
+
 function enableTracking() {
+  if (!hasTrackingConsent()) return;
   if (window.__gaLoaded) return;
   window.__gaLoaded = true;
 
   const script = document.createElement("script");
-  script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16871341515";
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
   script.async = true;
 
   script.onload = () => {
@@ -417,7 +512,12 @@ function enableTracking() {
 
     window.gtag = gtag;
     gtag("js", new Date());
-    gtag("config", "AW-16871341515");
+
+    if (hasTrackingConsent()) {
+      grantTracking();
+      gtag("config", GA4_MEASUREMENT_ID);
+      gtag("config", GOOGLE_ADS_ID);
+    }
   };
 
   document.head.appendChild(script);

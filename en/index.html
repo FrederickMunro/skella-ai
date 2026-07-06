@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://skella.ca/en/" />
-    <link rel="alternate" hreflang="en" href="https://skella.ca/en/">
+    <link rel="canonical" href="https://skella.ca/" />
+    <link rel="alternate" hreflang="en" href="https://skella.ca/">
     <link rel="alternate" hreflang="fr" href="https://skella.ca/fr/">
-    <link rel="alternate" hreflang="x-default" href="https://skella.ca/en/">
+    <link rel="alternate" hreflang="x-default" href="https://skella.ca/">
     <link
       rel="icon"
       type="image/png"
@@ -19,7 +21,7 @@
     <meta name="description" content="Fiberglass pool installation in Montreal, Laval, and South Shore. Skella specializes in turnkey fiberglass in-ground pools, excavation, and backyard landscaping across Greater Montreal." />
     <meta property="og:site_name" content="Groupe Skella" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://skella.ca/en/" />
+    <meta property="og:url" content="https://skella.ca/" />
     <meta property="og:title" content="Skella | Pool Installation Experts" />
     <meta property="og:description" content="Discover Skella — fiberglass in-ground pools and premium landscaping in Montreal. Turnkey design and installation. Request a personalized quote." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
@@ -37,11 +39,13 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://skella.ca/#business",
         "name": "Skella",
         "image": "https://skella.ca/assets/images/skella-logo.png",
-        "url": "https://skella.ca/en/",
+        "url": "https://skella.ca/",
         "telephone": "+15147023344",
         "email": "info@skella.ca",
+        "priceRange": "$$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "C.P. 54, Place Chambly",
@@ -50,13 +54,40 @@
           "postalCode": "J3L 4B1",
           "addressCountry": "CA"
         },
-        "areaServed": "Greater Montreal Area"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.4474,
+          "longitude": -73.2897
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100064180712995",
+          "https://www.instagram.com/excavations_skella",
+          "https://www.google.com/maps/search/?api=1&query=C.P.+54,+Place+Chambly,+Quebec,+J3L+4B1"
+        ],
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Greater Montreal Area"
+        }
       }
     </script>
   </head>
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>We value your privacy</h3>
@@ -68,7 +99,7 @@
     </div>
     <div class="bg-gradient"></div>
     <header class="site-header container">
-      <a class="brand" href="/en/" aria-label="Skella home">
+      <a class="brand" href="/" aria-label="Skella home">
         <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella" />
       </a>
 
@@ -253,22 +284,22 @@
       <div class="partner-links">
         <span class="social-label">Partner brands</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
 

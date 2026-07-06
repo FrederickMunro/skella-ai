@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+# Netlify also picks up 404.html automatically; _redirects serves the
+# English homepage at / and rewrites unmatched routes to 404.html.

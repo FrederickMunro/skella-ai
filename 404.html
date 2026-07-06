@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#113050" />
+    <title>Skella | Page not found</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Skella's homepage." />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/skella-tab-logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>
+      (function () {
+        var path = window.location.pathname || "";
+        var stored = localStorage.getItem("skella_language");
+        var browserFr =
+          (navigator.language || navigator.userLanguage || "")
+            .toLowerCase()
+            .indexOf("fr") === 0;
+        var lang =
+          path.indexOf("/fr") === 0 || path.indexOf("/fr/") > -1
+            ? "fr"
+            : stored === "fr" || stored === "en"
+              ? stored
+              : browserFr
+                ? "fr"
+                : "en";
+        document.documentElement.lang = lang;
+        document.documentElement.dataset.lang = lang;
+        document.title =
+          lang === "fr"
+            ? "Skella | Page introuvable"
+            : "Skella | Page not found";
+      })();
+    </script>
+  </head>
+
+  <body>
+    <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
+      <img src="/assets/images/cookie.svg" alt="Cookies" />
+    </button>
+
+    <div id="cookie-panel" class="cookie-panel">
+      <div data-lang="en">
+        <h3>We value your privacy</h3>
+        <p>
+          We use cookies to improve site performance, understand usage, and enhance your browsing experience. You can accept or reject non-essential cookies.
+        </p>
+        <div class="cookie-buttons">
+          <button id="accept-cookies">Accept</button>
+          <button id="reject-cookies">Reject</button>
+        </div>
+      </div>
+      <div data-lang="fr">
+        <h3>Nous respectons votre vie privée</h3>
+        <p>
+          Nous utilisons des cookies pour améliorer les performances du site, comprendre son utilisation et améliorer votre expérience de navigation. Vous pouvez accepter ou refuser les cookies non essentiels.
+        </p>
+        <div class="cookie-buttons">
+          <button id="accept-cookies-fr">Accepter</button>
+          <button id="reject-cookies-fr">Refuser</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gradient"></div>
+
+    <header class="site-header container">
+      <a class="brand" href="/" aria-label="Skella home">
+        <img class="brand-logo" src="/assets/images/skella-logo.png" alt="Skella" />
+      </a>
+
+      <div class="nav-wrapper">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mobile-nav">
+          <ul class="nav-list">
+            <li class="dropdown" data-lang="en">
+              <button class="dropdown-toggle">Pools ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="/en/pools/">Colors</a></li>
+                <li><a href="/en/pools/aquarino/">Aquarino Collection</a></li>
+                <li><a href="/en/pools/dolphin/">Dolphin Collection</a></li>
+                <li><a href="/en/pools/mova/">Mova Collection</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" data-lang="fr">
+              <button class="dropdown-toggle">Piscines ▾</button>
+              <ul class="dropdown-menu">
+                <li><a href="/fr/piscines/">Couleurs</a></li>
+                <li><a href="/fr/piscines/aquarino/">Collection Aquarino</a></li>
+                <li><a href="/fr/piscines/dolphin/">Collection Dolphin</a></li>
+                <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
+              </ul>
+            </li>
+            <li data-lang="en"><a href="/en/landscaping/">Landscaping</a></li>
+            <li data-lang="fr"><a href="/fr/amenagement-paysager/">Aménagement</a></li>
+            <li data-lang="en"><a href="/en/excavation/">Excavation</a></li>
+            <li data-lang="fr"><a href="/fr/excavation/">Excavation</a></li>
+            <li data-lang="en"><a href="/en/gallery/">Gallery</a></li>
+            <li data-lang="fr"><a href="/fr/galerie/">Galerie</a></li>
+            <li data-lang="en"><a href="/en/contact/">Contact</a></li>
+            <li data-lang="fr"><a href="/fr/contact/">Contact</a></li>
+            <li data-lang="en"><a href="/en/quote/">Quote</a></li>
+            <li data-lang="fr"><a href="/fr/soumission/">Soumission</a></li>
+            <li class="mobile-lang">
+              <button type="button" id="lang-toggle-404" class="lang-toggle">FR</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container error-page">
+      <section class="error-hero" aria-labelledby="error-title">
+        <div class="error-visual" aria-hidden="true">
+          <div class="error-ripple error-ripple-1"></div>
+          <div class="error-ripple error-ripple-2"></div>
+          <div class="error-ripple error-ripple-3"></div>
+          <span class="error-code">404</span>
+        </div>
+
+        <div class="error-copy">
+          <p class="eyebrow" data-lang="en">Off the deep end</p>
+          <p class="eyebrow" data-lang="fr">Hors des sentiers battus</p>
+
+          <h1 id="error-title" data-lang="en">This page took a dive</h1>
+          <h1 data-lang="fr">Cette page a fait un plongeon</h1>
+
+          <p class="error-text" data-lang="en">
+            The page you're looking for doesn't exist, was moved, or is temporarily unavailable. Let's get you back to dry land.
+          </p>
+          <p class="error-text" data-lang="fr">
+            La page que vous cherchez n'existe pas, a été déplacée ou est temporairement indisponible. Remontons à la surface.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="/" data-lang="en">Back to homepage</a>
+            <a class="btn btn-primary" href="/fr/" data-lang="fr">Retour à l'accueil</a>
+            <a class="btn btn-secondary" href="/en/contact/" data-lang="en">Contact us</a>
+            <a class="btn btn-secondary" href="/fr/contact/" data-lang="fr">Nous contacter</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="error-links" aria-labelledby="error-links-title">
+        <h2 id="error-links-title" data-lang="en">Popular destinations</h2>
+        <h2 data-lang="fr">Destinations populaires</h2>
+
+        <div class="error-links-grid">
+          <a class="error-link-card" href="/en/pools/" data-lang="en">
+            <span class="error-link-label">Pools</span>
+            <span class="error-link-desc">Explore fiberglass pool collections</span>
+          </a>
+          <a class="error-link-card" href="/fr/piscines/" data-lang="fr">
+            <span class="error-link-label">Piscines</span>
+            <span class="error-link-desc">Découvrez nos collections en fibre de verre</span>
+          </a>
+
+          <a class="error-link-card" href="/en/landscaping/" data-lang="en">
+            <span class="error-link-label">Landscaping</span>
+            <span class="error-link-desc">Outdoor living &amp; hardscape design</span>
+          </a>
+          <a class="error-link-card" href="/fr/amenagement-paysager/" data-lang="fr">
+            <span class="error-link-label">Aménagement</span>
+            <span class="error-link-desc">Design extérieur et aménagement paysager</span>
+          </a>
+
+          <a class="error-link-card" href="/en/quote/" data-lang="en">
+            <span class="error-link-label">Get a quote</span>
+            <span class="error-link-desc">Start planning your backyard project</span>
+          </a>
+          <a class="error-link-card" href="/fr/soumission/" data-lang="fr">
+            <span class="error-link-label">Soumission</span>
+            <span class="error-link-desc">Planifiez votre projet de cour arrière</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <div class="partner-links">
+        <span class="social-label" data-lang="en">Partner brands</span>
+        <span class="social-label" data-lang="fr">Marques partenaires</span>
+        <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/mova.svg" alt="Mova" />
+        </a>
+        <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/azoria.svg" alt="Azoria" />
+        </a>
+        <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/rinox.svg" alt="Rinox" />
+        </a>
+        <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+        </a>
+        <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+        </a>
+        <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+        </a>
+      </div>
+
+      <div class="social-links">
+        <span class="social-label" data-lang="en">Follow us</span>
+        <span class="social-label" data-lang="fr">Suivez-nous</span>
+        <a href="https://www.instagram.com/excavations_skella" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.5" cy="6.5" r="1.1"></circle>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100064180712995" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.4 8.2h2.2V5.1h-2.6c-3 0-4.5 1.8-4.5 4.7v2H7.3v3.1h2.2v5.8h3.2V15h2.6l.4-3.1h-3V10c0-1.1.4-1.8 1.7-1.8z"></path>
+          </svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.tiktok.com/@excavations_skella" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.2 4.2c.7 1.5 1.8 2.4 3.2 2.9v2.7c-1.2-.1-2.3-.5-3.2-1.1v5.6c0 2.9-2.2 5.1-5.2 5.1-2.9 0-5-2.3-5-5 0-2.8 2.2-5 5.1-5 .3 0 .6 0 .9.1v2.8c-.3-.1-.6-.2-.9-.2-1.4 0-2.4 1.1-2.4 2.4s1 2.4 2.4 2.4c1.4 0 2.4-1.1 2.4-2.4V4.2h2.7z"></path>
+          </svg>
+          <span>TikTok</span>
+        </a>
+      </div>
+
+      <p data-lang="en">
+        Skella pool installation — built for family moments.<br />
+        Greater Montreal area.
+      </p>
+      <p data-lang="fr">
+        Installation de piscines Skella — Créée pour les moments en famille.<br />
+        Région du Grand Montréal.
+      </p>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>
+      (function () {
+        var html = document.documentElement;
+
+        function setLang(lang) {
+          html.lang = lang;
+          html.dataset.lang = lang;
+          localStorage.setItem("skella_language", lang);
+          document.title =
+            lang === "fr"
+              ? "Skella | Page introuvable"
+              : "Skella | Page not found";
+
+          var brand = document.querySelector(".brand");
+          if (brand) {
+            brand.href = lang === "fr" ? "/fr/" : "/";
+            brand.setAttribute(
+              "aria-label",
+              lang === "fr" ? "Accueil Skella" : "Skella home"
+            );
+          }
+
+          var cookieFab = document.getElementById("cookie-fab");
+          if (cookieFab) {
+            cookieFab.setAttribute(
+              "aria-label",
+              lang === "fr" ? "Paramètres des cookies" : "Cookie settings"
+            );
+          }
+        }
+
+        function toggleLang() {
+          setLang(html.dataset.lang === "fr" ? "en" : "fr");
+        }
+
+        function updateLangToggleLabel() {
+          var toggle = document.getElementById("lang-toggle-404");
+          if (toggle) {
+            toggle.textContent = html.dataset.lang === "fr" ? "EN" : "FR";
+          }
+        }
+
+        document
+          .getElementById("lang-toggle-404")
+          ?.addEventListener("click", function () {
+            toggleLang();
+            updateLangToggleLabel();
+          });
+
+        setLang(html.dataset.lang || "en");
+        updateLangToggleLabel();
+
+        var acceptFr = document.getElementById("accept-cookies-fr");
+        var rejectFr = document.getElementById("reject-cookies-fr");
+        var acceptEn = document.getElementById("accept-cookies");
+        var rejectEn = document.getElementById("reject-cookies");
+
+        if (acceptFr && acceptEn) {
+          acceptFr.addEventListener("click", function () {
+            acceptEn.click();
+          });
+        }
+        if (rejectFr && rejectEn) {
+          rejectFr.addEventListener("click", function () {
+            rejectEn.click();
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

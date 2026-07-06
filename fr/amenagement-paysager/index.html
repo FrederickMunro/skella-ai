@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/fr/amenagement-paysager/" />
     <link
@@ -26,6 +28,8 @@
     <meta property="og:title" content="Skella | Aménagement paysager" />
     <meta property="og:description" content="Services d’aménagement paysager Skella — pavage, plantations et finitions extérieures pour compléter votre projet de piscine." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="geo.region" content="CA-QC" />
@@ -41,12 +45,95 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://skella.ca/#business",
+            "name": "Skella",
+            "image": "https://skella.ca/assets/images/skella-logo.png",
+            "url": "https://skella.ca/fr/amenagement-paysager/",
+            "telephone": "+15147023344",
+            "email": "info@skella.ca",
+            "priceRange": "$$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "C.P. 54, Place Chambly",
+              "addressLocality": "Chambly",
+              "addressRegion": "QC",
+              "postalCode": "J3L 4B1",
+              "addressCountry": "CA"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 45.4474,
+              "longitude": -73.2897
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=100064180712995",
+              "https://www.instagram.com/excavations_skella",
+              "https://www.google.com/maps/search/?api=1&query=C.P.+54,+Place+Chambly,+Quebec,+J3L+4B1"
+            ],
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Greater Montreal Area"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://skella.ca/fr/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Aménagement paysager",
+                "item": "https://skella.ca/fr/amenagement-paysager/"
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "Aménagement paysager",
+            "description": "Pavage, plantation et finitions extérieures pour projets de piscine à Montréal.",
+            "url": "https://skella.ca/fr/amenagement-paysager/",
+            "provider": {
+              "@id": "https://skella.ca/#business"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Greater Montreal Area"
+            }
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
 
     <div id="cookie-panel" class="cookie-panel">
@@ -86,7 +173,7 @@
                 <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
               </ul>
             </li>
-            <li><a href="/fr/amenagement-paysager/">Aménagement paysager</a></li>
+            <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
             <li><a href="/fr/excavation/">Excavation</a></li>
             <li><a href="/fr/galerie/">Galerie</a></li>
             <li><a href="/fr/contact/">Contact</a></li>
@@ -263,22 +350,22 @@
           <span class="social-label">Partenaires</span>
 
           <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/mova.svg" alt="Mova" />
+            <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
           </a>
           <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/azoria.svg" alt="Azoria" />
+            <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
           </a>
           <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/rinox.svg" alt="Rinox" />
+            <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
           </a>
           <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+            <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
           </a>
           <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+            <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
           </a>
           <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+            <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
           </a>
         </div>
 

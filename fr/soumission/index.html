@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/fr/soumission/" />
     <link
@@ -23,6 +25,8 @@
     <meta property="og:title" content="Skella | Demande de soumission" />
     <meta property="og:description" content="Demandez une soumission à Skella — formulaire en ligne et options de financement pour votre projet extérieur." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:locale:alternate" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- SEO: Geo targeting -->
@@ -40,26 +44,37 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://skella.ca/fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Demande de soumission",
+            "item": "https://skella.ca/fr/soumission/"
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css"
       media="screen"
     />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-16871341515");
-    </script>
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Paramètres des cookies">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
 
     <div id="cookie-panel" class="cookie-panel">
@@ -99,7 +114,7 @@
                 <li><a href="/fr/piscines/mova/">Collection Mova</a></li>
               </ul>
             </li>
-            <li><a href="/fr/amenagement-paysager/">Aménagement paysager</a></li>
+            <li><a href="/fr/amenagement-paysager/">Aménagement</a></li>
             <li><a href="/fr/excavation/">Excavation</a></li>
             <li><a href="/fr/galerie/">Galerie</a></li>
             <li><a href="/fr/contact/">Contact</a></li>
@@ -163,22 +178,22 @@
       <div class="partner-links">
         <span class="social-label">Marques partenaires</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
 

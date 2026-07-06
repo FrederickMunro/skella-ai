@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://skella.ca/en/pools/dolphin/" />
     <link rel="alternate" hreflang="en" href="https://skella.ca/en/pools/dolphin/" />
@@ -27,6 +29,8 @@
     <meta property="og:title" data-i18n-content="pageTitleDolphin" content="Skella | Dolphin Pools" />
     <meta property="og:description" data-i18n-content="metaDescDolphin" content="Browse the Dolphin fiberglass pool collection from Skella — shapes and models for every backyard." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale:alternate" content="fr_CA" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,21 +39,38 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16871341515"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://skella.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pools",
+            "item": "https://skella.ca/en/pools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dolphin Collection",
+            "item": "https://skella.ca/en/pools/dolphin/"
+          }
+        ]
       }
-      gtag("js", new Date());
-      gtag("config", "AW-16871341515");
     </script>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
     <div id="cookie-panel" class="cookie-panel">
       <h3>We value your privacy</h3>
@@ -123,13 +144,23 @@
 
           <!-- BAYFIELD -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/bayfield.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/bayfield-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/bayfield-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameBayfield">Bayfield</h3>
             <p data-i18n="poolDescLargeSideSteps">Large format pool with side steps.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 13'6"x31', 15'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Sizes</span>
+                <div class="pool-spec-bubbles">
+                  <span>13'6" x 31'</span>
+                  <span>15' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -152,13 +183,22 @@
 
           <!-- BRITANNIA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/britannia.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/britannia-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/britannia-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameBritannia">Britannia</h3>
             <p data-i18n="poolDescLargeSideSteps">Large format pool with side steps.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -181,13 +221,22 @@
 
           <!-- ELORA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/elora.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/elora-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/elora-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameElora">Elora</h3>
             <p data-i18n="poolDescRectFlatBottom">Rectangular pool with a flat bottom.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 5'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x18'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 18'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -210,13 +259,22 @@
 
           <!-- KELOWNA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/kelowna.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/kelowna-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/kelowna-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameKelowna">Kelowna</h3>
             <p data-i18n="poolDescLargeSlopedBenches">Large pool with sloped bottom and built-in benches.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -239,13 +297,24 @@
 
           <!-- SANDBANKS -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/sandbanks.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/sandbanks-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/sandbanks-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameSandbanks">Sandbanks</h3>
             <p data-i18n="poolDescFlatBenches">Flat-bottom pool with integrated benches.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 4'6"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 8'x17', 8'x26', 12'x26'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>4'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Sizes</span>
+                <div class="pool-spec-bubbles">
+                  <span>8' x 17'</span>
+                  <span>8' x 26'</span>
+                  <span>12' x 26'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -268,13 +337,22 @@
 
           <!-- SAUBLE -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/sauble.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/sauble-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/sauble-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameSauble">Sauble</h3>
             <p data-i18n="poolDescBeachEntry">Large rectangular pool with beach entry and slope.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x41'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 41'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -297,13 +375,22 @@
 
           <!-- SOUTH HAMPTON -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/south-hampton.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/south-hampton-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/south-hampton-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameSouthHampton">South Hampton</h3>
             <p data-i18n="poolDescBeachEntry">Large rectangular pool with beach entry and slope.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x30'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 30'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -326,13 +413,22 @@
 
           <!-- TOFINO -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/tofino.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/tofino-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/tofino-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameTofino">Tofino</h3>
             <p data-i18n="poolDescLargestCanada">Largest fiberglass pool available in Canada.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 8'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 16'x40'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>8'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 40'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -363,13 +459,22 @@
     
           <!-- DARLINGTON -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/darlington.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/darlington-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/darlington-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameDarlington">Darlington</h3>
             <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
-            <div class="pool-specs">
-            <span><strong data-i18n="depthLabel">Depth:</strong> 5'4"</span>
-            <span><strong data-i18n="sizeLabel">Size:</strong> 12'x25'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'4"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 25'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -392,14 +497,24 @@
 
           <!-- OKA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/oka.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/oka-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/oka-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameOka">Oka</h3>
             <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
-            <div class="pool-specs">
-            <span><strong data-i18n="depthLabel">Depth:</strong> 6'2"</span>
-            <span><strong data-i18n="sizeLabel">Size:</strong> 13'x33'</span>
-            <span><strong data-i18n="altLabel">Alt:</strong> 6'5" · 15'6"x36'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depths</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'2"</span>
+                  <span>6'5"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Sizes</span>
+                <div class="pool-spec-bubbles">
+                  <span>13' x 33'</span>
+                  <span>15'6" x 36'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -422,13 +537,22 @@
 
           <!-- DOVER -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/dover.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/dover-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/dover-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameDover">Dover</h3>
             <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
-            <div class="pool-specs">
-            <span><strong data-i18n="depthLabel">Depth:</strong> 5'8"</span>
-            <span><strong data-i18n="sizeLabel">Size:</strong> 16'x38'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'8"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>16' x 38'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -451,13 +575,22 @@
 
           <!-- WASAGA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/wasaga.jpg" />
-            <img class="pool-model" src="/assets/images/dolphin/wasaga-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/wasaga-model.png"  loading="lazy" />
             <h3 data-i18n="dolphinNameWasaga">Wasaga</h3>
             <p data-i18n="poolDescFreeformSlope">Freeform pool with a sloping bottom.</p>
-            <div class="pool-specs">
-            <span><strong data-i18n="depthLabel">Depth:</strong> 5'10"</span>
-            <span><strong data-i18n="sizeLabel">Size:</strong> 14'x32'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'10"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 32'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -480,13 +613,22 @@
 
           <!-- HOPEWELL -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/hopewell.jpg" alt="Hopewell Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/hopewell-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/hopewell-model.png" alt="Hopewell Pool"  loading="lazy" />
             <h3 data-i18n="dolphinNameHopewell">Hopewell</h3>
             <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 15'x35'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>15' x 35'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -517,13 +659,22 @@
 
           <!-- FLORENCIA -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/florencia.jpg" alt="Florencia Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/florencia-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/florencia-model.png" alt="Florencia Pool"  loading="lazy" />
             <h3 data-i18n="dolphinNameFlorencia">Florencia</h3>
             <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 14'x34'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>14' x 34'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -546,13 +697,23 @@
 
           <!-- LEAMY -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/leamy.jpg" alt="Leamy Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/leamy-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/leamy-model.png" alt="Leamy Pool"  loading="lazy" />
             <h3 data-i18n="dolphinNameLeamy">Leamy</h3>
             <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 6'6"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 12'x29', 15'x34'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>6'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Sizes</span>
+                <div class="pool-spec-bubbles">
+                  <span>12' x 29'</span>
+                  <span>15' x 34'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -575,13 +736,22 @@
 
           <!-- ROSEWAY -->
           <article class="sub-card pool-card">
-            <img class="pool-image" src="/assets/images/dolphin/roseway.jpg" alt="Roseway Pool" />
-            <img class="pool-model" src="/assets/images/dolphin/roseway-model.png" />
+            <img class="pool-image model" src="/assets/images/dolphin/roseway-model.png" alt="Roseway Pool"  loading="lazy" />
             <h3 data-i18n="dolphinNameRoseway">Roseway</h3>
             <p data-i18n="poolDescClassicSlope">Classic model with a sloping bottom.</p>
-            <div class="pool-specs">
-              <span><strong data-i18n="depthLabel">Depth:</strong> 5'6"</span>
-              <span><strong data-i18n="sizeLabel">Size:</strong> 10'x24'</span>
+            <div class="pool-specs pool-specs--grouped">
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="depthLabel">Depth</span>
+                <div class="pool-spec-bubbles">
+                  <span>5'6"</span>
+                </div>
+              </div>
+              <div class="pool-spec-group">
+                <span class="pool-spec-label" data-i18n="sizeLabel">Size</span>
+                <div class="pool-spec-bubbles">
+                  <span>10' x 24'</span>
+                </div>
+              </div>
             </div>
             <div class="pool-card-actions">
               <a
@@ -611,22 +781,22 @@
       <div class="partner-links">
         <span class="social-label" data-i18n="partnersLabel">Partner brands</span>
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer" >
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer" >    
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
       <div class="social-links">

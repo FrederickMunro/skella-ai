@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="/consent.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="canonical" href="https://skella.ca/en/contact/" />
@@ -18,6 +20,11 @@
     <link rel="alternate" hreflang="en" href="https://skella.ca/en/contact/" />
     <link rel="alternate" hreflang="fr" href="https://skella.ca/fr/contact/" />
     <link rel="alternate" hreflang="x-default" href="https://skella.ca/en/contact/" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/skella-tab-logo.png"
+    />
 
     <title>Skella | Contact</title>
 
@@ -32,35 +39,93 @@
     <meta property="og:title" content="Skella | Contact" />
     <meta property="og:description" content="Contact Skella for pool installation, landscaping, and excavation — phone, email, and message form." />
     <meta property="og:image" content="https://skella.ca/assets/images/skella-logo.png" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale:alternate" content="fr_CA" />
 
     <meta name="twitter:card" content="summary_large_image" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Skella",
-        "image": "https://skella.ca/assets/images/skella-logo.png",
-        "url": "https://skella.ca/en/contact/",
-        "telephone": "+15147023344",
-        "email": "info@skella.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "C.P. 54, Place Chambly",
-          "addressLocality": "Chambly",
-          "addressRegion": "QC",
-          "postalCode": "J3L 4B1",
-          "addressCountry": "CA"
-        },
-        "areaServed": "Greater Montreal Area"
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://skella.ca/#business",
+            "name": "Skella",
+            "image": "https://skella.ca/assets/images/skella-logo.png",
+            "url": "https://skella.ca/en/contact/",
+            "telephone": "+15147023344",
+            "email": "info@skella.ca",
+            "priceRange": "$$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "C.P. 54, Place Chambly",
+              "addressLocality": "Chambly",
+              "addressRegion": "QC",
+              "postalCode": "J3L 4B1",
+              "addressCountry": "CA"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 45.4474,
+              "longitude": -73.2897
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=100064180712995",
+              "https://www.instagram.com/excavations_skella",
+              "https://www.google.com/maps/search/?api=1&query=C.P.+54,+Place+Chambly,+Quebec,+J3L+4B1"
+            ],
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Greater Montreal Area"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://skella.ca/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://skella.ca/en/contact/"
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
 
   <body>
     <button id="cookie-fab" class="cookie-fab" aria-label="Cookie settings">
-      <img src="/assets/images/cookie.svg" alt="Cookies" />
+      <img src="/assets/images/cookie.svg" alt="Cookies"  loading="lazy" />
     </button>
 
     <div id="cookie-panel" class="cookie-panel">
@@ -227,9 +292,11 @@
               />
 
               <input
-                type="tel"
+                type="text"
                 name="phone"
-                placeholder="Phone Number"
+                placeholder="(514) 555-1234"
+                inputmode="numeric"
+                maxlength="14"
                 autocomplete="tel"
               />
 
@@ -257,22 +324,22 @@
         <span class="social-label">Partner brands</span>
 
         <a href="https://piscinesmova.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/mova.svg" alt="Mova" />
+          <img src="/assets/images/mova.svg" alt="Mova"  loading="lazy" />
         </a>
         <a href="https://www.azoria.ca/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/azoria.svg" alt="Azoria" />
+          <img src="/assets/images/azoria.svg" alt="Azoria"  loading="lazy" />
         </a>
         <a href="https://rinox.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/rinox.svg" alt="Rinox" />
+          <img src="/assets/images/rinox.svg" alt="Rinox"  loading="lazy" />
         </a>
         <a href="https://www.info-ex.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/info-excavation.png" alt="Info Excavation" />
+          <img src="/assets/images/info-excavation.png" alt="Info Excavation"  loading="lazy" />
         </a>
         <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc" />
+          <img src="/assets/images/techo-bloc.svg" alt="Techo-Bloc"  loading="lazy" />
         </a>
         <a href="https://www.groupericher.com/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer" />
+          <img src="/assets/images/groupe-richer.svg" alt="Groupe Richer"  loading="lazy" />
         </a>
       </div>
 
